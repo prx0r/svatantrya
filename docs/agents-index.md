@@ -44,6 +44,10 @@ cannot name its input fails closed.
 
 ## How to verify what you were told
 
+- **Run the agent recipes** (`docs/agent-recipes.md`, `tools/recipes_run.py`):
+  eight tested sequences — resolve, evidence+hashes, formal chain, coverage,
+  outsider sha verification, full research flow, honest boundaries, fail-closed.
+  Live result logged to `data/recipes-report.json`.
 - Run `trika-x` `formal-trika/tools/chatgpt_acceptance_run.py` (raw mode,
   16/16) or the connected-mode suite (T16–T20) — it checks the whole public
   surface with live calls and reports PASS/FAIL with observed values.

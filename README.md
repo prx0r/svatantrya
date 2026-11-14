@@ -40,6 +40,7 @@ witness → chunk → layers → formal → arguments → treeka → essay → t
 | [docs/90-glossary.md](docs/90-glossary.md) | Layer names, tiers, terms |
 | [docs/99-culmination-audit-2026-11-14.md](docs/99-culmination-audit-2026-11-14.md) | **Final accounting**: DONE / NOT DONE / AT RISK + preservation manifest + rebuild recipe |
 | [docs/agents-index.md](docs/agents-index.md) | **Agent entry point** — the one correct path from question to checkable answer |
+| [docs/agent-recipes.md](docs/agent-recipes.md) | **Tested agent recipes** — 8 executable sequences, live-verified |
 
 ## Estate reference (per repo)
 

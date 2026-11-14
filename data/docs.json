@@ -215,6 +215,17 @@
   "docs/estate/translation-work.md": {
    "status": "REFERENCE",
    "note": "Per-repo reference: role, gate, honest state. (2026-11-14.)"
+  },
+  "docs/agent-recipes.md": {
+   "status": "CANONICAL",
+   "note": "Eight executable recipes for external agents, tested live (2026-11-14); report in data/recipes-report.json.",
+   "allow_stale": [
+    "8/8",
+    "17/154",
+    "138",
+    "154",
+    "7"
+   ]
   }
  }
 }
