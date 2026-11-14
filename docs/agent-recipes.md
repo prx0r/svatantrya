@@ -1,8 +1,8 @@
 # AGENT RECIPES — tested sequences, with what each actually proves
 
-*Status: CANONICAL. Twelve recipes an external agent runs against the public
+*Status: CANONICAL. Sixteen recipes an external agent runs against the public
 surface (no key, no box). Every one is executable, was run live on 2026-11-14
-(`data/recipes-report.json`, 12/12), and every check has a named negative control
+(`data/recipes-report.json`, 16/16), and every check has a named negative control
 (`tools/recipes_run.py --selftest` proves each judge rejects deliberate
 corruption). Run them: `python3 tools/recipes_run.py`.*
 
@@ -97,9 +97,39 @@ Each recipe is split into **gather** (live calls → observed) and **judge**
 **What it proves:** the translation lane's public read returns the work's registry state honestly (the payload distinguishes gold from machine-proposed).
 **Why relevant:** an agent must say whether a work is gold or merely machine-proposed before quoting it.
 
+## R13 — Evidence rows: a theorem's grounds
+
+**Call:** `formal__evidence {"theorem":"Kancuka.lean :: count_5"}`
+**Passes when:** found; a `kind`; cites ≥1 chunk; the chunk carries a `locator`, a `tier` (T/R/E/C/H/X), a `status`; the `note` says registry refs are **not entailments**.
+**What it proves:** the theorem's registry row is exposed with its tier and the passages it is bound to.
+**Why relevant:** this is how "Sanskrit is being proved" becomes auditable — the theorem names its passages, and the payload refuses to claim entailment.
+
+## R14 — Harness receipts: proof leaves a receipt
+
+**Call:** `formal__runs {}`
+**Passes when:** runs ≥1; latest has a timestamp; control + recognition exit 0; Lean version recorded.
+**What it proves:** each rung has a recorded run (Lean version, exit codes, rev), not just a claim of passing.
+**Why relevant:** a proof without a receipt is theatre.
+
+## R15 — Axiom hygiene: no smuggled 'proof'
+
+**Call:** `formal__axioms {}`
+**Passes when:** exit 0; static report says CLEAN; forbidden markers (`sorry`, custom axiom, `native_decide`) were scanned.
+**What it proves:** the Lean corpus carries no placeholders/axioms (static half; kernel verdict needs pinned Lean).
+**Why relevant:** stops "proved" from meaning "assumed".
+
+## R16 — Provenance chain: one bundle, Sanskrit → proof
+
+**Call:** `formal__trace {"work":"tantrasara-a08","target":"tsa08-p03"}`
+**Passes when:** verdict COMPLETE; source `bytes_sha256` is 64-hex; layers present; formal status recorded (`REGISTERED`/`none`); identity hop `BOUND`/`UNRESOLVED`.
+**What it proves:** the whole audit chain lives in one hash-pinned bundle: source bytes → layers → formal status → identity.
+**Why relevant:** this is the object an essay or DOI cites — one bundle from Sanskrit bytes to proof and identity.
+
+See `docs/formal-audit-chain.md` for how these hops compose into the proven method.
+
 ---
 
-## The pattern behind all twelve
+## The pattern behind all sixteen
 
 **resolve identity → read evidence (hashes + review state) → check proof →
 report gaps → verify bytes.** Every step answers honestly: `NONE`, `UNREVIEWED`,
@@ -111,4 +141,4 @@ report gaps → verify bytes.** Every step answers honestly: `NONE`, `UNREVIEWED
 applies deliberate corruptions to the observed data (e.g. `verdict→PARTIAL`,
 `recomputed_matches→false`, `evidence_is_honest→false`) and asserts the judge
 **fails** on every one. A recipe that cannot be made to fail is not a test.
-Current: all 12 pass live, every mutation caught.
+Current: all 16 pass live, every mutation caught.

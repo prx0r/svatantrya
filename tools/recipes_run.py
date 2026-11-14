@@ -242,6 +242,47 @@ def R12_gather():
             "registry_verses": reg.get("verses")}
 
 
+def R13_gather():
+    d = mcp_call("formal__evidence", {"theorem": "Kancuka.lean :: count_5"})
+    chunks = d.get("chunks") or []
+    c0 = chunks[0] if chunks else {}
+    return {"found": d.get("found"), "kind": d.get("kind"),
+            "chunks": len(chunks),
+            "chunk_has_locator": bool(c0.get("locator")),
+            "chunk_tier": c0.get("tier"), "chunk_status": c0.get("status"),
+            "note_is_not_entailment": "entailment" in (d.get("note") or "")}
+
+
+def R14_gather():
+    d = mcp_call("formal__runs", {})
+    latest = d.get("latest") or {}
+    h = latest.get("harnesses") or {}
+    return {"runs": d.get("runs"),
+            "has_latest": bool(latest.get("at")),
+            "control_ok": h.get("control") == 0, "recognition_ok": h.get("recognition") == 0,
+            "has_lean_version": bool(latest.get("lean"))}
+
+
+def R15_gather():
+    d = mcp_call("formal__axioms", {})
+    rep = " ".join(d.get("report") or [])
+    return {"exit": d.get("exit"), "clean": "CLEAN" in rep,
+            "no_sorry_scanned": "forbidden markers" in rep}
+
+
+def R16_gather():
+    t = mcp_call("formal__trace", {"work": "tantrasara-a08", "target": "tsa08-p03"})
+    src = t.get("source") or {}
+    lay = t.get("layers") or {}
+    form = t.get("formal") or {}
+    ident = t.get("identity") or {}
+    return {"verdict": t.get("verdict"),
+            "source_sha_len": len(src.get("bytes_sha256") or ""),
+            "layers": len(lay),
+            "formal_status": form.get("status"),
+            "identity_hop": ident.get("status")}
+
+
 RECIPES = [
     ("R1_identity",
      "Resolve a known work to EXACT+id; an unknown to NONE. Never invent.",
@@ -365,6 +406,49 @@ RECIPES = [
       ("registry reports verse count", lambda o: isinstance(o.get("registry_verses"), int))],
      "the translation lane's public read returns the work's registry state honestly (machine-proposed vs gold is in the payload).",
      "an agent must be able to say whether a work is gold or merely machine-proposed before quoting it."),
+    ("R13_evidence_rows",
+     "formal__evidence returns a theorem's grounds: tier, kind, chunk locators.",
+     R13_gather, None,
+     [("theorem found", lambda o: o.get("found") is True),
+      ("has a kind", lambda o: bool(o.get("kind"))),
+      ("cites >=1 chunk", lambda o: o.get("chunks", 0) >= 1),
+      ("chunk carries a locator", lambda o: o.get("chunk_has_locator") is True),
+      ("chunk carries a tier", lambda o: o.get("chunk_tier") in ("T", "R", "E", "C", "H", "X")),
+      ("chunk carries a status", lambda o: bool(o.get("chunk_status"))),
+      ("registry refs flagged as not entailment", lambda o: o.get("note_is_not_entailment") is True)],
+     "a Lean theorem's registry row is exposed: tier, kind, and the chunk locators it is bound to.",
+     "this is how 'Sanskrit is being proved' becomes auditable: the theorem names the passages it rests on."),
+
+    ("R14_harness_receipts",
+     "formal__runs exposes harness receipts with exit codes + Lean version.",
+     R14_gather, None,
+     [("runs recorded", lambda o: isinstance(o.get("runs"), int) and o.get("runs", 0) >= 1),
+      ("latest receipt has a timestamp", lambda o: o.get("has_latest") is True),
+      ("control harness exit 0", lambda o: o.get("control_ok") is True),
+      ("recognition harness exit 0", lambda o: o.get("recognition_ok") is True),
+      ("Lean version recorded", lambda o: o.get("has_lean_version") is True)],
+     "each formal rung has a recorded run receipt (Lean version, exit codes), not just a claim of passing.",
+     "a proof without a receipt is theatre; this proves the receipts exist and are clean."),
+
+    ("R15_axiom_hygiene",
+     "formal__axioms reports static CLEAN: no sorry/axiom/native_decide.",
+     R15_gather, None,
+     [("audit exit 0", lambda o: o.get("exit") == 0),
+      ("static CLEAN", lambda o: o.get("clean") is True),
+      ("forbidden markers were scanned", lambda o: o.get("no_sorry_scanned") is True)],
+     "the Lean corpus carries no sorry/axiom/native_decide markers (static half; kernel verdict needs pinned Lean).",
+     "prevents 'proved' from being 'assumed': no smuggled axioms, no placeholders."),
+
+    ("R16_provenance_chain",
+     "One trace bundle links source bytes + layers + formal status + identity.",
+     R16_gather, None,
+     [("verdict COMPLETE", lambda o: o.get("verdict") == "COMPLETE"),
+      ("source bytes sha is 64-hex", lambda o: o.get("source_sha_len") == 64),
+      ("layers present", lambda o: o.get("layers", 0) >= 1),
+      ("formal status recorded", lambda o: o.get("formal_status") in ("REGISTERED", "none")),
+      ("identity hop resolved (BOUND/UNRESOLVED)", lambda o: o.get("identity_hop") in ("BOUND", "UNRESOLVED"))],
+     "the whole audit chain lives in one bundle: source bytes (hash) -> layers -> formal status -> identity, with a verdict.",
+     "this is the object an essay or a DOI cites: one hash-pinned bundle from Sanskrit bytes to proof and identity."),
 ]
 
 
@@ -392,6 +476,14 @@ MUTATIONS = {
                      ("prompt_len", 0), ("has_url", False)],
     "R12_translation_state": [("registry_work", "wrong"), ("has_status", False),
                               ("registry_verses", None)],
+    "R13_evidence_rows": [("found", False), ("kind", ""), ("chunks", 0),
+                          ("chunk_has_locator", False), ("chunk_tier", None),
+                          ("chunk_status", ""), ("note_is_not_entailment", False)],
+    "R14_harness_receipts": [("runs", 0), ("has_latest", False), ("control_ok", False),
+                             ("recognition_ok", False), ("has_lean_version", False)],
+    "R15_axiom_hygiene": [("exit", 1), ("clean", False), ("no_sorry_scanned", False)],
+    "R16_provenance_chain": [("verdict", "PARTIAL"), ("source_sha_len", 0), ("layers", 0),
+                             ("formal_status", "unknown"), ("identity_hop", "MISSING")],
 }
 
 
