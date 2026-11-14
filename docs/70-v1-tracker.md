@@ -12,8 +12,11 @@ is owner switches plus scholarly coverage. No feature creep.*
 - [x] Owner console live (`mcp.sanskrit.help`, 210 tools, bearer)
 - [x] Formal/Lean tools public (`formal.svatantrya.net`): `formal__trace` → COMPLETE
 - [x] Public instructions speak plain layer names + "machine-checked"
-- [ ] **Per-layer sha256 + review state in `scholar__passage_evidence`** (gap)
-- [ ] **Google indexing confirmed** (owner: Search Console)
+- [x] ChatGPT acceptance suite T0–T15 passes live 16/16 (trika-x: suite + runner + CI wrapper; PR open)
+- [x] GEO files live: robots.txt allows AI crawlers + names sitemap; 1963-URL sitemap exposes 906 claim pages; claim JSON-LD carries honesty states (BLOCKED/UNPINNED/UNBOUND/UNREVIEWED); llms.txt served
+- [ ] **Per-layer sha256 + review state in `scholar__passage_evidence`** (gap — the one V1 surface gap)
+- [ ] `llms.txt` does not yet point agents at the live MCP endpoint URL (svread emitter lane)
+- [ ] **Google indexing confirmed** (owner: Search Console — no submission portal exists for organic AI citations; crawlable surface is the whole lever)
 
 ### Identity (OpenPāṭala)
 - [x] check.py GREEN + 2 recorded BLOCKED — honest
@@ -39,6 +42,8 @@ is owner switches plus scholarly coverage. No feature creep.*
 
 1. **[agent]** `scholar__passage_evidence`: add per-layer sha256 + review state
    (svread scholar lane; small, high value for trust).
+2. **[agent]** `llms.txt`: point agents at the live MCP endpoint URL
+   (svread emitter template; one-line-class fix, high GEO value).
 2. **[owner]** Revoke the leaked GitHub token + MCP bearer; reconnect write app.
 3. **[owner]** Search Console + sitemap submit; confirm indexing.
 4. **[owner]** Credentials rotation; disk reclaim; nightly-green confirmation.
