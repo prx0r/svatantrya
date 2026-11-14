@@ -35,6 +35,7 @@ witness → chunk → layers → formal → arguments → treeka → essay → t
 | [docs/50-recipes.md](docs/50-recipes.md) | Endgame: diary → teachings → media → journey (R1–R9) |
 | [docs/60-live-state.md](docs/60-live-state.md) | Verified live endpoints, counts, receipts (2026-11-14) |
 | [docs/70-v1-tracker.md](docs/70-v1-tracker.md) | V1 definition of done + repair queue |
+| [docs/80-methodical-checklist.md](docs/80-methodical-checklist.md) | Methodical verification, one step at a time — Step 1 (trika-x) done |
 | [docs/90-glossary.md](docs/90-glossary.md) | Layer names, tiers, terms |
 | [docs/99-culmination-audit-2026-11-14.md](docs/99-culmination-audit-2026-11-14.md) | **Final accounting**: DONE / NOT DONE / AT RISK + preservation manifest + rebuild recipe |
 
