@@ -1,4 +1,5 @@
 # 60 — Live state (verified 2026-11-14)
+*Status: CANONICAL. Verified live endpoints and counts with reproduction commands. (2026-11-14.)*
 
 Every line below was produced by running the command shown, on the box or over
 the internet, this session. Re-run any of them; a number that doesn't reproduce

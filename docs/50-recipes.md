@@ -1,4 +1,5 @@
 # 50 — Endgame recipes (diary → teachings → media → journey)
+*Status: PROPOSED. Endgame recipes R1-R9: spec, unbuilt by design, owner-gated. (2026-11-14.)*
 
 Nine flavors of one shape: **private source (consent) → compile (verbatim +
 claims) → sharpen (L3/L4) → verify (audit/pushback) → human gates

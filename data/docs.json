@@ -1,0 +1,220 @@
+{
+ "format": "svatantrya-docs-registry/1",
+ "scope": [
+  "*.md at root and docs/**/*.md (tools/, data/ out of scope)"
+ ],
+ "docs": {
+  "README.md": {
+   "status": "CANONICAL",
+   "note": "Front door: thesis, map, laws. (2026-11-14.)",
+   "allow_stale": [
+    "1034\\ works",
+    "206\\ theorems"
+   ]
+  },
+  "PAPER.md": {
+   "status": "CANONICAL",
+   "note": "Public paper: what this actually is. (2026-11-14.)",
+   "allow_stale": [
+    "1034\\ works",
+    "107\\ tests",
+    "154\\ chunks",
+    "154\\ passages",
+    "155\\ entries",
+    "206\\ theorems",
+    "210\\ tools",
+    "51\\ tools",
+    "909\\ passages"
+   ]
+  },
+  "docs/00-thesis.md": {
+   "status": "CANONICAL",
+   "note": "Goal, laws, tiers. (2026-11-14.)",
+   "allow_stale": [
+    "206\\ theorems"
+   ]
+  },
+  "docs/10-openpatala.md": {
+   "status": "CANONICAL",
+   "note": "Identity root. (2026-11-14.)"
+  },
+  "docs/20-translation-evidence.md": {
+   "status": "CANONICAL",
+   "note": "Evidence pillar. (2026-11-14.)",
+   "allow_stale": [
+    "14/14",
+    "9/9"
+   ]
+  },
+  "docs/30-formal-proofs.md": {
+   "status": "CANONICAL",
+   "note": "Proof pillar. (2026-11-14.)",
+   "allow_stale": [
+    "107\\ tests",
+    "154\\ chunks",
+    "155\\ entries",
+    "16/154",
+    "206\\ theorems"
+   ]
+  },
+  "docs/40-federation-mcp.md": {
+   "status": "CANONICAL",
+   "note": "One MCP surface + live endpoints. (2026-11-14.)",
+   "claims": [
+    {
+     "id": "site-up",
+     "http_status": "https://svatantrya.net",
+     "expect": 200
+    },
+    {
+     "id": "public-mcp-up",
+     "http_status": "https://mcp.svatantrya.net/mcp",
+     "expect": 406
+    },
+    {
+     "id": "formal-up",
+     "http_status": "https://formal.svatantrya.net/mcp",
+     "expect": 406
+    }
+   ],
+   "allow_stale": [
+    "10\\ tools",
+    "115\\ tools",
+    "16\\ tools",
+    "18\\ tools",
+    "210\\ tools",
+    "22\\ tools",
+    "41\\ tools",
+    "51\\ tools"
+   ]
+  },
+  "docs/50-recipes.md": {
+   "status": "PROPOSED",
+   "note": "Endgame recipes R1-R9, spec only. (2026-11-14.)"
+  },
+  "docs/60-live-state.md": {
+   "status": "CANONICAL",
+   "note": "Verified live state + commands. (2026-11-14.)",
+   "claims": [
+    {
+     "id": "site",
+     "http_status": "https://svatantrya.net",
+     "expect": 200
+    },
+    {
+     "id": "sanskrit-help",
+     "http_status": "https://sanskrit.help",
+     "expect": 200
+    },
+    {
+     "id": "ipvv",
+     "http_status": "https://ipvv-a8u.pages.dev",
+     "expect": 200
+    },
+    {
+     "id": "satsang",
+     "http_status": "https://chat.tantrafiles.xyz",
+     "expect": 200
+    }
+   ],
+   "allow_stale": [
+    "051\\ works",
+    "1034\\ works",
+    "107\\ tests",
+    "14\\ tests",
+    "14/14",
+    "154\\ chunks",
+    "155\\ entries",
+    "16/154",
+    "206\\ theorems",
+    "44\\ certificates",
+    "51\\ tools",
+    "8/8",
+    "9/9",
+    "909\\ bundles",
+    "909\\ passages"
+   ]
+  },
+  "docs/70-v1-tracker.md": {
+   "status": "CANONICAL",
+   "note": "V1 definition of done + queue. (2026-11-14.)",
+   "allow_stale": [
+    "16/154",
+    "16/16",
+    "206/155",
+    "210\\ tools",
+    "26/0",
+    "51\\ tools",
+    "53/0",
+    "8/8"
+   ]
+  },
+  "docs/80-methodical-checklist.md": {
+   "status": "CANONICAL",
+   "note": "Methodical verification. (2026-11-14.)",
+   "allow_stale": [
+    "10\\ tools",
+    "107\\ tests",
+    "115\\ tools",
+    "155\\ entries",
+    "206\\ theorems"
+   ]
+  },
+  "docs/90-glossary.md": {
+   "status": "REFERENCE",
+   "note": "Glossary. (2026-11-14.)"
+  },
+  "docs/99-culmination-audit-2026-11-14.md": {
+   "status": "HISTORICAL",
+   "note": "Final accounting snapshot. (2026-11-14.)"
+  },
+  "docs/agents-index.md": {
+   "status": "CANONICAL",
+   "note": "Agent entry point. (2026-11-14.)",
+   "claims": [
+    {
+     "id": "site",
+     "http_status": "https://svatantrya.net",
+     "expect": 200
+    },
+    {
+     "id": "public-mcp",
+     "http_status": "https://mcp.svatantrya.net/mcp",
+     "expect": 406
+    }
+   ],
+   "allow_stale": [
+    "16/16",
+    "51\\ tools"
+   ]
+  },
+  "docs/estate/atlas-corpus.md": {
+   "status": "REFERENCE",
+   "note": "Per-repo reference: role, gate, honest state. (2026-11-14.)"
+  },
+  "docs/estate/factories.md": {
+   "status": "REFERENCE",
+   "note": "Per-repo reference: role, gate, honest state. (2026-11-14.)"
+  },
+  "docs/estate/ipvv-sanskritbench.md": {
+   "status": "REFERENCE",
+   "note": "Per-repo reference: role, gate, honest state. (2026-11-14.)"
+  },
+  "docs/estate/nibbanahelp.md": {
+   "status": "REFERENCE",
+   "note": "Per-repo reference: role, gate, honest state. (2026-11-14.)"
+  },
+  "docs/estate/study-practice.md": {
+   "status": "REFERENCE",
+   "note": "Per-repo reference: role, gate, honest state. (2026-11-14.)"
+  },
+  "docs/estate/svread.md": {
+   "status": "REFERENCE",
+   "note": "Per-repo reference: role, gate, honest state. (2026-11-14.)"
+  },
+  "docs/estate/translation-work.md": {
+   "status": "REFERENCE",
+   "note": "Per-repo reference: role, gate, honest state. (2026-11-14.)"
+  }
+ }
+}

@@ -1,4 +1,5 @@
 # 20 — Translation evidence (translation-work + Scholar)
+*Status: CANONICAL. Evidence pillar: the eight layers, Scholar, provenance. (2026-11-14.)*
 
 Translation-work is the **evidence** layer: T1→L0→ARGMAP→L2→C1→C2→L3→L4, per
 chunk, sha-pinned per layer, with ARGMAP nodes feeding the crux queue and

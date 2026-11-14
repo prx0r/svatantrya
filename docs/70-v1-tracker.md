@@ -1,4 +1,5 @@
 # 70 — V1 tracker (definition of done + repair queue)
+*Status: CANONICAL. V1 definition of done, repair queue, owner switches. (2026-11-14.)*
 
 *The single progress ledger. V1 is engineering-complete and live; what remains
 is owner switches plus scholarly coverage. No feature creep.*
