@@ -23,3 +23,5 @@ jobs:
         run: python3 -m unittest tools.test_doc_check -v
       - name: Agent recipes (live public surface)
         run: python3 tools/recipes_run.py
+      - name: Agent recipes selftest (negative controls)
+        run: python3 tools/recipes_run.py --selftest

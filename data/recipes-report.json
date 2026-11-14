@@ -1,6 +1,6 @@
 {
  "format": "svatantrya.recipes-report/1",
- "checked_at": "2026-11-14T15:08:55+00:00",
+ "checked_at": "2026-11-14T15:34:59+00:00",
  "endpoint": "https://mcp.svatantrya.net/mcp",
  "passed": 8,
  "total": 8,
@@ -8,58 +8,127 @@
   {
    "recipe": "R1_identity",
    "purpose": "Resolve a known work to EXACT+id; an unknown to NONE. Never invent.",
+   "proved": "the resolver distinguishes an exact hit from a miss, and does not fabricate an entity for garbage.",
+   "relevance": "an agent must get a stable work_id before any downstream call; guessing an id poisons every later claim.",
    "pass": true,
+   "failed_checks": [],
    "observed": {
-    "known": "EXACT",
+    "known": {
+     "status": "EXACT",
+     "entity": {
+      "id": "bodhapancadasika",
+      "preferred_title": "bodhapancadasika",
+      "work_type": "TEXT"
+     },
+     "record": {
+      "work_id": "bodhapancadasika",
+      "dossier_path": "/v1/bundle/bodhapancadasika",
+      "preferred_title": "bodhapancadasika",
+      "work_type": "TEXT",
+      "current_title_assertion_id": null,
+      "embedded_external_ids": [],
+      "catalogue_identifiers": [],
+      "title_assertions": [],
+      "tradition_assertions": [],
+      "authorship_assertions": [],
+      "edition_count": 1,
+      "translation_count": 1,
+      "translation_languages": [
+       "eng"
+      ],
+      "witness_count": 0,
+      "etext_count": 1,
+      "matched_by": [
+       "preferred_title",
+       "canonical_work_id"
+      ]
+     },
+     "matched_exactly_by": [
+      "preferred_title",
+      "canonical_work_id"
+     ],
+     "response_sha256": "e586c5470a4565cc9c5cf2f8de2ae8ae441b9b4cab9da2701fea412c9691c815"
+    },
+    "unknown": {
+     "status": "NONE",
+     "query": "zzzz-not-a-work-qqq",
+     "response_sha256": "a5d2831a43a8c28c8f1a233a8928eb53df408c395b5e05a695c69ff24b7ea476"
+    },
+    "known_status": "EXACT",
     "known_id": "bodhapancadasika",
-    "unknown": "NONE"
+    "unknown_status": "NONE",
+    "known_has_no_error": true
    }
   },
   {
    "recipe": "R2_evidence",
    "purpose": "Passage evidence returns layers + per-layer sha256 + review state.",
+   "proved": "the evidence payload is hash-bearing and its review state is honest by default.",
+   "relevance": "an agent quoting a passage must be able to hand the reader a hash and the real review state, not a claim of review.",
    "pass": true,
+   "failed_checks": [],
    "observed": {
     "layers": 7,
     "layer_sha256": 7,
+    "hashes_valid": true,
     "review_default": "UNREVIEWED"
    }
   },
   {
    "recipe": "R3_formal",
-   "purpose": "formal__trace → COMPLETE + named theorems; formal__gaps → denominator.",
+   "purpose": "formal__trace -> COMPLETE + named theorems; formal__gaps -> denominator.",
+   "proved": "the formal chain resolves to named, registered Lean theorems, and gaps carry a total.",
+   "relevance": "COMPLETE-with-named-theorems is the difference between 'we checked it' and 'trust us'; an agent must show the names.",
    "pass": true,
+   "failed_checks": [],
    "observed": {
     "verdict": "COMPLETE",
     "theorems": 9,
-    "coverage": "17/154"
+    "named_theorems": 9,
+    "has_denominator": true
    }
   },
   {
    "recipe": "R4_coverage_honesty",
-   "purpose": "Coverage is a fraction with a published gap list, never a bare number.",
+   "purpose": "Coverage is a fraction; gap_count equals the gaps list (or says truncated).",
+   "proved": "coverage is never a bare headline: it carries a denominator and a gap list consistent with gap_count.",
+   "relevance": "the whole estate's honesty depends on never quoting a coverage number without its gap list; this proves the payload can't lie about it.",
    "pass": true,
+   "failed_checks": [],
    "observed": {
     "coverage": "17/154",
     "total": 154,
-    "gap_count": 138
+    "gap_count": 138,
+    "returned": 138,
+    "truncated": false,
+    "gaps_listed": 138
    }
   },
   {
    "recipe": "R5_outsider_verify",
-   "purpose": "The killer recipe: fetch verify pack + source artifact, recompute sha256.",
+   "purpose": "Fetch verify pack + source (and a layer) artifact; recompute sha256.",
+   "proved": "an outsider recomputes the published bytes' sha256 with no code/account and it matches the recorded hash.",
+   "relevance": "this is the answer to 'how do I know this is real?' — fetch the bytes, sha256sum, compare. If this fails, nothing else is citable.",
    "pass": true,
+   "failed_checks": [],
    "observed": {
     "manifest": 200,
     "artifact": 200,
+    "artifact_bytes": 108,
+    "recorded_sha_len": 64,
     "recomputed_matches": true,
-    "sha256": "38289155de79b834…"
+    "sha256": "38289155de79b834…",
+    "layer_artifact": 200,
+    "layer_matches": true
    }
   },
   {
    "recipe": "R6_research_flow",
-   "purpose": "Chained flow on a work that carries the whole chain: identity → evidence",
+   "purpose": "Chained identity -> evidence (verse) -> proof (chunk), identity BOUND.",
+   "proved": "one work carries the whole chain end to end and the trace's identity hop binds to the resolved work.",
+   "relevance": "this is the actual task an agent does: resolve, read, prove, with identity consistent across all three.",
    "pass": true,
+   "failed_checks": [],
    "observed": {
     "identity": "EXACT",
     "work_id": "paramarthasara",
@@ -69,22 +138,30 @@
    }
   },
   {
-   "recipe": "R8_honest_boundary",
-   "purpose": "An agent must NOT assume proof implies readable evidence. Some chunks have",
+   "recipe": "R7_fail_closed",
+   "purpose": "Unknown tool + bad target error; empty query is NONE/INVALID_QUERY.",
+   "proved": "the surface fails closed: bad input errors, empty input resolves to nothing, never a silent success.",
+   "relevance": "an agent must be able to trust that an empty answer means 'no result', not 'the tool quietly did nothing'.",
    "pass": true,
+   "failed_checks": [],
    "observed": {
-    "evidence": "WITHHELD",
-    "trace": "COMPLETE",
-    "note": "proof may be COMPLETE while reading is withheld — both stated"
+    "unknown_tool_errored": true,
+    "bad_target_errored": true,
+    "empty_query_status": "NONE"
    }
   },
   {
-   "recipe": "R7_fail_closed",
-   "purpose": "Unknown tool errors cleanly; bad target errors; empty query is NONE.",
+   "recipe": "R8_honest_boundary",
+   "purpose": "COMPLETE trace may coexist with withheld reading; both stated.",
+   "proved": "a proof-complete chunk may still withhold its reading, and the surface says which — no silent empty.",
+   "relevance": "prevents an agent from assuming 'proof exists => passage readable' and inventing a reading where none is served.",
    "pass": true,
+   "failed_checks": [],
    "observed": {
-    "unknown_tool_errored": true,
-    "bad_target_errored": true
+    "evidence": "WITHHELD",
+    "evidence_is_honest": true,
+    "trace": "COMPLETE",
+    "note": "proof may be COMPLETE while reading is withheld — both stated"
    }
   }
  ]
