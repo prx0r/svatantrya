@@ -152,6 +152,26 @@ several are CONFLICTING or CI-failing and need rebase/repair before merge (see �
 | videofactory | #2/#3 | OPEN, CI fail | repair or close with note |
 | ipvv | #12 wheel gates (Google auth + scoring) | OPEN, MERGEABLE | **review + merge — unlocks practice scoring** |
 
+### Handoff security patches (2026-11-14, zip verified sha256, all 6 files OK)
+
+Source: `ayoutube/svatantrya-pr-handoff-2026-11-14.zip` (60,643 B). Four
+reviewed patches, applied to fresh branches and opened as **draft PRs** (no
+merges, no deploys — owner/lane review required):
+
+| Repo | Draft PR | What | Verification on box |
+|---|---|---|---|
+| svread | **#51** remove private relay from public surface | Delists nibbana relay from plugins/registry/docs; staged-only public deploys (`stage_public_site.py` + `site_assets.py`); regression test | 3 privacy/manifest tests pass; release manifest 11,108 hashes; full suite has one PRE-EXISTING emit_traces failure (box TW checkout drift vs committed bundles — fails identically without this patch; CI green) |
+| translation-work | **#22** gate Shastra MCP writes | Fail-closed owner allowlist + 32-byte bearer; MCP `promote` disabled; proof/PASS decoupled from validate/assemble; shared locked queue updates; auto-push removed from ralph/continue/tal_run_all | 22 focused tests pass (FastMCP stubbed); compileall + shell syntax + `git diff --check` clean; **rebased onto burn ralph-234** (patch base had drifted) with prove+expose tools classified (`serve_status` public; `make_readable`, `make_traces` owner-gated) |
+| bookfactory | **#4** bearer-gated HTTP MCP adapter | New `bf_mcp/http_server.py` (15 read + 7 write tools, fail-closed unknown); stdio untouched | 9 auth tests + 4 subtests pass; live FastMCP/Uvicorn integration still owed before exposing writes |
+| videofactory | **#4** HTTP write-auth logic + tests | `core/http_auth.py` + `tests/test_http_auth.py` (4 pass); docs hunk and server hook NOT applied — see finding below | stdlib-only; no behavior change (nothing imports the module yet) |
+
+**Videofactory reconciliation finding:** the handoff's docs + server-hook
+hunks target state that exists nowhere pushed — `docs/CHATGPT-PLUGIN.md`
+never existed in the repo, and no branch (master, PR #2, PR #3) has HTTP
+serving code to hook the middleware into. Only the self-contained auth module
++ tests were banked; server wiring belongs with whichever PR establishes the
+HTTP surface. Do not present the patch as fully applied.
+
 ---
 
 ## F. Stale-doc register (stop trusting these)
