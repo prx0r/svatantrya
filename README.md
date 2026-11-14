@@ -36,6 +36,7 @@ witness → chunk → layers → formal → arguments → treeka → essay → t
 | [docs/60-live-state.md](docs/60-live-state.md) | Verified live endpoints, counts, receipts (2026-11-14) |
 | [docs/70-v1-tracker.md](docs/70-v1-tracker.md) | V1 definition of done + repair queue |
 | [docs/90-glossary.md](docs/90-glossary.md) | Layer names, tiers, terms |
+| [docs/99-culmination-audit-2026-11-14.md](docs/99-culmination-audit-2026-11-14.md) | **Final accounting**: DONE / NOT DONE / AT RISK + preservation manifest + rebuild recipe |
 
 ## Estate repos (roles, one line each)
 
