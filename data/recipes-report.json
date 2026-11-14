@@ -1,9 +1,9 @@
 {
  "format": "svatantrya.recipes-report/1",
- "checked_at": "2026-11-14T15:34:59+00:00",
+ "checked_at": "2026-11-14T16:02:21+00:00",
  "endpoint": "https://mcp.svatantrya.net/mcp",
- "passed": 8,
- "total": 8,
+ "passed": 12,
+ "total": 12,
  "results": [
   {
    "recipe": "R1_identity",
@@ -162,6 +162,63 @@
     "evidence_is_honest": true,
     "trace": "COMPLETE",
     "note": "proof may be COMPLETE while reading is withheld — both stated"
+   }
+  },
+  {
+   "recipe": "R9_bibliography",
+   "purpose": "search_bibliography returns OK + total + results + a response hash.",
+   "proved": "bibliographic search is real (a query returns ranked works with a stable response hash), not a title-keyword guess.",
+   "relevance": "finding a work by name/alias/identifier is the first half of every research task; the response hash lets a caller cite the exact answer.",
+   "pass": true,
+   "failed_checks": [],
+   "observed": {
+    "status": "OK",
+    "total": 158,
+    "results": 3,
+    "sha_len": 64,
+    "first_has_id": true
+   }
+  },
+  {
+   "recipe": "R10_treeka",
+   "purpose": "treeka__chain returns the argument graph rows, each with work+verses.",
+   "proved": "the work-to-passages argument graph is assembled and every entry is anchored (work + verse range).",
+   "relevance": "an agent exploring a text needs the passage graph, not isolated chunks; this proves the join exists and is anchored.",
+   "pass": true,
+   "failed_checks": [],
+   "observed": {
+    "work": "tantrasara-a08",
+    "rows": 4,
+    "entries": 4,
+    "entries_shaped": true
+   }
+  },
+  {
+   "recipe": "R11_learning",
+   "purpose": "wheel_level returns a teaching level with prompt + gate + url.",
+   "proved": "the learning surface serves a real, gate-bearing level (prompt + scoring rule + source), not a bare form list.",
+   "relevance": "an agent teaching Sanskrit needs the level text AND the server-side gate so a score is never self-reported.",
+   "pass": true,
+   "failed_checks": [],
+   "observed": {
+    "level": 1,
+    "has_title": true,
+    "has_url": true,
+    "prompt_len": 910,
+    "has_gate": true
+   }
+  },
+  {
+   "recipe": "R12_translation_state",
+   "purpose": "translate__status returns registry state for a work with a status summary.",
+   "proved": "the translation lane's public read returns the work's registry state honestly (machine-proposed vs gold is in the payload).",
+   "relevance": "an agent must be able to say whether a work is gold or merely machine-proposed before quoting it.",
+   "pass": true,
+   "failed_checks": [],
+   "observed": {
+    "registry_work": "tantrasara-a08",
+    "has_status": true,
+    "registry_verses": 93
    }
   }
  ]

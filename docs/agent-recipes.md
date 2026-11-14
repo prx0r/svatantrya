@@ -1,8 +1,8 @@
 # AGENT RECIPES — tested sequences, with what each actually proves
 
-*Status: CANONICAL. Eight recipes an external agent runs against the public
+*Status: CANONICAL. Twelve recipes an external agent runs against the public
 surface (no key, no box). Every one is executable, was run live on 2026-11-14
-(`data/recipes-report.json`, 8/8), and every check has a named negative control
+(`data/recipes-report.json`, 12/12), and every check has a named negative control
 (`tools/recipes_run.py --selftest` proves each judge rejects deliberate
 corruption). Run them: `python3 tools/recipes_run.py`.*
 
@@ -69,9 +69,37 @@ Each recipe is split into **gather** (live calls → observed) and **judge**
 **What it proves:** a proof-complete chunk may still withhold its reading, and the surface says which.
 **Why relevant:** prevents an agent from assuming "proof exists ⇒ passage readable" and inventing a reading where none is served. *(Real example: `tantrasara-a08/tsa08-p03` — trace COMPLETE, reading withheld.)*
 
+## R9 — Bibliography search: find a work by name/alias/identifier
+
+**Call:** `openpatala__search_bibliography {"q":"tantra","limit":3}`
+**Passes when:** status `OK`; `total` a positive int; ≥1 result; `response_sha256` 64-hex; first result carries a `work_id`.
+**What it proves:** bibliographic search is real (ranked works + a stable response hash), not a title-keyword guess.
+**Why relevant:** finding a work is the first half of every research task; the response hash lets a caller cite the exact answer.
+
+## R10 — Treeka: the argument graph
+
+**Call:** `treeka__chain {"work":"tantrasara-a08"}`
+**Passes when:** `rows ≥ 1`; entries present; every entry names `work` + `verses`.
+**What it proves:** the work→passages argument graph is assembled and every entry is anchored to a verse range.
+**Why relevant:** an agent exploring a text needs the passage graph, not isolated chunks; this proves the join exists and is anchored.
+
+## R11 — Learning: a real, gate-bearing level
+
+**Call:** `scholar__wheel_level {"level":1}`
+**Passes when:** level echoes 1; title present; a server-scored `gate` object present; prompt substantive (>100 chars); a source `url` present.
+**What it proves:** the learning surface serves a real level (prompt + scoring rule + source), not a bare form list.
+**Why relevant:** teaching Sanskrit needs the level text AND the server-side gate so a score is never self-reported.
+
+## R12 — Translation state: gold vs machine-proposed
+
+**Call:** `translate__status {"work":"tantrasara-a08"}`
+**Passes when:** registry work matches; `STATUS` present; registry reports a verse count.
+**What it proves:** the translation lane's public read returns the work's registry state honestly (the payload distinguishes gold from machine-proposed).
+**Why relevant:** an agent must say whether a work is gold or merely machine-proposed before quoting it.
+
 ---
 
-## The pattern behind all eight
+## The pattern behind all twelve
 
 **resolve identity → read evidence (hashes + review state) → check proof →
 report gaps → verify bytes.** Every step answers honestly: `NONE`, `UNREVIEWED`,
@@ -83,4 +111,4 @@ report gaps → verify bytes.** Every step answers honestly: `NONE`, `UNREVIEWED
 applies deliberate corruptions to the observed data (e.g. `verdict→PARTIAL`,
 `recomputed_matches→false`, `evidence_is_honest→false`) and asserts the judge
 **fails** on every one. A recipe that cannot be made to fail is not a test.
-Current: all 8 pass live, all mutations caught.
+Current: all 12 pass live, every mutation caught.

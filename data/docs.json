@@ -220,11 +220,14 @@
    "status": "CANONICAL",
    "note": "Eight executable recipes for external agents, tested live (2026-11-14); report in data/recipes-report.json.",
    "allow_stale": [
-    "8/8",
-    "17/154",
+    "12/12",
     "138",
     "154",
-    "7"
+    "158",
+    "17/154",
+    "3",
+    "7",
+    "8/8"
    ]
   }
  }
