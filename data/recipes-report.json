@@ -1,0 +1,91 @@
+{
+ "format": "svatantrya.recipes-report/1",
+ "checked_at": "2026-11-14T15:08:55+00:00",
+ "endpoint": "https://mcp.svatantrya.net/mcp",
+ "passed": 8,
+ "total": 8,
+ "results": [
+  {
+   "recipe": "R1_identity",
+   "purpose": "Resolve a known work to EXACT+id; an unknown to NONE. Never invent.",
+   "pass": true,
+   "observed": {
+    "known": "EXACT",
+    "known_id": "bodhapancadasika",
+    "unknown": "NONE"
+   }
+  },
+  {
+   "recipe": "R2_evidence",
+   "purpose": "Passage evidence returns layers + per-layer sha256 + review state.",
+   "pass": true,
+   "observed": {
+    "layers": 7,
+    "layer_sha256": 7,
+    "review_default": "UNREVIEWED"
+   }
+  },
+  {
+   "recipe": "R3_formal",
+   "purpose": "formal__trace → COMPLETE + named theorems; formal__gaps → denominator.",
+   "pass": true,
+   "observed": {
+    "verdict": "COMPLETE",
+    "theorems": 9,
+    "coverage": "17/154"
+   }
+  },
+  {
+   "recipe": "R4_coverage_honesty",
+   "purpose": "Coverage is a fraction with a published gap list, never a bare number.",
+   "pass": true,
+   "observed": {
+    "coverage": "17/154",
+    "total": 154,
+    "gap_count": 138
+   }
+  },
+  {
+   "recipe": "R5_outsider_verify",
+   "purpose": "The killer recipe: fetch verify pack + source artifact, recompute sha256.",
+   "pass": true,
+   "observed": {
+    "manifest": 200,
+    "artifact": 200,
+    "recomputed_matches": true,
+    "sha256": "38289155de79b834…"
+   }
+  },
+  {
+   "recipe": "R6_research_flow",
+   "purpose": "Chained flow on a work that carries the whole chain: identity → evidence",
+   "pass": true,
+   "observed": {
+    "identity": "EXACT",
+    "work_id": "paramarthasara",
+    "evidence_layers": 7,
+    "trace": "COMPLETE",
+    "identity_hop": "BOUND"
+   }
+  },
+  {
+   "recipe": "R8_honest_boundary",
+   "purpose": "An agent must NOT assume proof implies readable evidence. Some chunks have",
+   "pass": true,
+   "observed": {
+    "evidence": "WITHHELD",
+    "trace": "COMPLETE",
+    "note": "proof may be COMPLETE while reading is withheld — both stated"
+   }
+  },
+  {
+   "recipe": "R7_fail_closed",
+   "purpose": "Unknown tool errors cleanly; bad target errors; empty query is NONE.",
+   "pass": true,
+   "observed": {
+    "unknown_tool_errored": true,
+    "bad_target_errored": true
+   }
+  }
+ ]
+}

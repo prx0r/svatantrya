@@ -21,3 +21,5 @@ jobs:
         run: python3 tools/doc_check.py
       - name: Doc-gate self-tests
         run: python3 -m unittest tools.test_doc_check -v
+      - name: Agent recipes (live public surface)
+        run: python3 tools/recipes_run.py
