@@ -1,9 +1,9 @@
 {
  "format": "svatantrya.recipes-report/1",
- "checked_at": "2026-11-14T16:02:21+00:00",
+ "checked_at": "2026-11-14T16:08:23+00:00",
  "endpoint": "https://mcp.svatantrya.net/mcp",
- "passed": 12,
- "total": 12,
+ "passed": 16,
+ "total": 16,
  "results": [
   {
    "recipe": "R1_identity",
@@ -219,6 +219,66 @@
     "registry_work": "tantrasara-a08",
     "has_status": true,
     "registry_verses": 93
+   }
+  },
+  {
+   "recipe": "R13_evidence_rows",
+   "purpose": "formal__evidence returns a theorem's grounds: tier, kind, chunk locators.",
+   "proved": "a Lean theorem's registry row is exposed: tier, kind, and the chunk locators it is bound to.",
+   "relevance": "this is how 'Sanskrit is being proved' becomes auditable: the theorem names the passages it rests on.",
+   "pass": true,
+   "failed_checks": [],
+   "observed": {
+    "found": true,
+    "kind": "KEY",
+    "chunks": 1,
+    "chunk_has_locator": true,
+    "chunk_tier": "T",
+    "chunk_status": "ARGMAP-PINNED",
+    "note_is_not_entailment": true
+   }
+  },
+  {
+   "recipe": "R14_harness_receipts",
+   "purpose": "formal__runs exposes harness receipts with exit codes + Lean version.",
+   "proved": "each formal rung has a recorded run receipt (Lean version, exit codes), not just a claim of passing.",
+   "relevance": "a proof without a receipt is theatre; this proves the receipts exist and are clean.",
+   "pass": true,
+   "failed_checks": [],
+   "observed": {
+    "runs": 32,
+    "has_latest": true,
+    "control_ok": true,
+    "recognition_ok": true,
+    "has_lean_version": true
+   }
+  },
+  {
+   "recipe": "R15_axiom_hygiene",
+   "purpose": "formal__axioms reports static CLEAN: no sorry/axiom/native_decide.",
+   "proved": "the Lean corpus carries no sorry/axiom/native_decide markers (static half; kernel verdict needs pinned Lean).",
+   "relevance": "prevents 'proved' from being 'assumed': no smuggled axioms, no placeholders.",
+   "pass": true,
+   "failed_checks": [],
+   "observed": {
+    "exit": 0,
+    "clean": true,
+    "no_sorry_scanned": true
+   }
+  },
+  {
+   "recipe": "R16_provenance_chain",
+   "purpose": "One trace bundle links source bytes + layers + formal status + identity.",
+   "proved": "the whole audit chain lives in one bundle: source bytes (hash) -> layers -> formal status -> identity, with a verdict.",
+   "relevance": "this is the object an essay or a DOI cites: one hash-pinned bundle from Sanskrit bytes to proof and identity.",
+   "pass": true,
+   "failed_checks": [],
+   "observed": {
+    "verdict": "COMPLETE",
+    "source_sha_len": 64,
+    "layers": 8,
+    "formal_status": "REGISTERED",
+    "identity_hop": "BOUND"
    }
   }
  ]

@@ -40,7 +40,9 @@ witness → chunk → layers → formal → arguments → treeka → essay → t
 | [docs/90-glossary.md](docs/90-glossary.md) | Layer names, tiers, terms |
 | [docs/99-culmination-audit-2026-11-14.md](docs/99-culmination-audit-2026-11-14.md) | **Final accounting**: DONE / NOT DONE / AT RISK + preservation manifest + rebuild recipe |
 | [docs/agents-index.md](docs/agents-index.md) | **Agent entry point** — the one correct path from question to checkable answer |
-| [docs/agent-recipes.md](docs/agent-recipes.md) | **Tested agent recipes** — 8 executable sequences, live-verified |
+| [docs/agent-recipes.md](docs/agent-recipes.md) | **Tested agent recipes** — 16 executable sequences, live-verified |
+| [docs/formal-audit-chain.md](docs/formal-audit-chain.md) | **The proven method** — Lean proving → trace derivation → essay construction → publication |
+| [docs/openpatala-runtime.md](docs/openpatala-runtime.md) | openpatala as agent identity surface + runtime spine |
 
 ## Estate reference (per repo)
 

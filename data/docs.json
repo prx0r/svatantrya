@@ -229,6 +229,31 @@
     "7",
     "8/8"
    ]
+  },
+  "docs/formal-audit-chain.md": {
+   "status": "CANONICAL",
+   "note": "The proven method: proving(Lean)→derivation(trace)→construction(essay gates)→publication(human). (2026-11-14.)",
+   "allow_stale": [
+    "17/154",
+    "154 chunks",
+    "6 essays",
+    "0 BROKEN"
+   ]
+  },
+  "docs/openpatala-runtime.md": {
+   "status": "CANONICAL",
+   "note": "openpatala as agent identity surface + runtime spine for translation/formal. (2026-11-14.)",
+   "allow_stale": [
+    "1034 works",
+    "909 passages",
+    "1559",
+    "121",
+    "20 people",
+    "8/8",
+    "479",
+    "555",
+    "2 recorded"
+   ]
   }
  }
 }
