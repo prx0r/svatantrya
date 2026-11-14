@@ -1,4 +1,5 @@
 # Svatantrya — the Trika endgame, documented from the ground up
+*Status: CANONICAL. Estate documentation front door: thesis, map, laws. (2026-11-14.)*
 
 > One question about a Trika text walks down to a witness and back up to a
 > signed, DOI'd essay — or a lesson, or a practice — with every link
@@ -38,6 +39,19 @@ witness → chunk → layers → formal → arguments → treeka → essay → t
 | [docs/80-methodical-checklist.md](docs/80-methodical-checklist.md) | Methodical verification, one step at a time — Step 1 (trika-x) done |
 | [docs/90-glossary.md](docs/90-glossary.md) | Layer names, tiers, terms |
 | [docs/99-culmination-audit-2026-11-14.md](docs/99-culmination-audit-2026-11-14.md) | **Final accounting**: DONE / NOT DONE / AT RISK + preservation manifest + rebuild recipe |
+| [docs/agents-index.md](docs/agents-index.md) | **Agent entry point** — the one correct path from question to checkable answer |
+
+## Estate reference (per repo)
+
+| Doc | What |
+|---|---|
+| [docs/estate/translation-work.md](docs/estate/translation-work.md) | Evidence pillar: layers, gate, hot-loop caveat |
+| [docs/estate/svread.md](docs/estate/svread.md) | Surface pillar: live endpoints, deploy, guarantees |
+| [docs/estate/ipvv-sanskritbench.md](docs/estate/ipvv-sanskritbench.md) | Source labour + calibration |
+| [docs/estate/nibbanahelp.md](docs/estate/nibbanahelp.md) | The private pillar (consent, VOICE RULE) |
+| [docs/estate/factories.md](docs/estate/factories.md) | bookfactory + videofactory (gated renders) |
+| [docs/estate/study-practice.md](docs/estate/study-practice.md) | sanskrithelp, deitybody, satsang |
+| [docs/estate/atlas-corpus.md](docs/estate/atlas-corpus.md) | patalacheckpoints, tantrasara, aoc |
 
 ## Estate repos (roles, one line each)
 

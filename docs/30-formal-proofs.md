@@ -1,4 +1,5 @@
 # 30 — Formal proofs (formal-trika Lean spine)
+*Status: CANONICAL. Proof pillar: Lean spine, twins, traces, stated limits. (2026-11-14.)*
 
 > For the full plain-language account of what trika-x is and does — the five
 > jobs, every component, what consumes it downstream, the exact ChatGPT path,

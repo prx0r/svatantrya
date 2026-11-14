@@ -1,4 +1,5 @@
 # 90 — Glossary
+*Status: REFERENCE. Layers, tiers, verdicts, roles, terms. (2026-11-14.)*
 
 ## Layers (public name → machine key)
 

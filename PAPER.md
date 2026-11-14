@@ -1,4 +1,5 @@
 # What this actually is
+*Status: CANONICAL. Public-facing paper: what this actually is, for an intelligent outsider. (2026-11-14.)*
 
 *A public paper about the Svatantrya estate. No prerequisites assumed beyond
 curiosity. Every number below was produced by running the command beside it on

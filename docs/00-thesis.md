@@ -1,4 +1,5 @@
 # 00 — Thesis
+*Status: CANONICAL. The goal, laws, tiers, tiers vocabulary. (2026-11-14.)*
 
 ## The goal (one line)
 

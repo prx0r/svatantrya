@@ -1,4 +1,5 @@
 # 40 — Federation + MCP (one agent entry point, ChatGPT plugins)
+*Status: CANONICAL. One MCP surface: topology, live endpoints, read sheaf. (2026-11-14.)*
 
 One agent entry point. OpenPāṭala is the identity root; every other system is a
 child MCP. The parent multiplexes, prefixes, routes FailOpen, and serves

@@ -1,4 +1,5 @@
 # CULMINATION AUDIT — the whole estate, before the volume goes (2026-11-14)
+*Status: HISTORICAL. Final accounting before volume delete: DONE/NOT DONE/AT RISK, preservation manifest. (2026-11-14.)*
 
 *This is the final accounting. Every claim below was re-verified this session:
 gates re-run, endpoints re-probed, R2 re-listed, restores re-tested. Where a

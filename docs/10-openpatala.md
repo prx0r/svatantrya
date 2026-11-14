@@ -1,4 +1,5 @@
 # 10 — OpenPāṭala (identity root)
+*Status: CANONICAL. Identity root: what works, counts, gate. (2026-11-14.)*
 
 > "OpenPāṭala is not the archive. It is the memory and research protocol over
 > the archives."

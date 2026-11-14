@@ -1,4 +1,5 @@
 # Methodical checklist — estate verification, one step at a time (started 2026-11-14)
+*Status: CANONICAL. Methodical verification, one step at a time. (2026-11-14.)*
 
 *Rule: no step is marked done without the command that proved it and the
 output observed. A step that fails stops the checklist — fix, re-run, record.

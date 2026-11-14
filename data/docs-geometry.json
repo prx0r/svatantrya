@@ -1,0 +1,101 @@
+{
+ "format": "svatantrya-docs-geometry/1",
+ "generated": "2026-11-14",
+ "note": "svatantrya documents the estate; edges point at the repos whose facts each doc records.",
+ "nodes": [
+  {
+   "id": "svatantrya",
+   "kind": "repo"
+  },
+  {
+   "id": "trika-x",
+   "kind": "repo"
+  },
+  {
+   "id": "openpatala",
+   "kind": "repo"
+  },
+  {
+   "id": "translation-work",
+   "kind": "repo"
+  },
+  {
+   "id": "svread",
+   "kind": "repo"
+  },
+  {
+   "id": "ipvv",
+   "kind": "repo"
+  },
+  {
+   "id": "bookfactory",
+   "kind": "repo"
+  },
+  {
+   "id": "videofactory",
+   "kind": "repo"
+  },
+  {
+   "id": "sanskritbench",
+   "kind": "repo"
+  },
+  {
+   "id": "sanskrithelp",
+   "kind": "repo"
+  },
+  {
+   "id": "nibbanahelp",
+   "kind": "repo"
+  },
+  {
+   "id": "patalacheckpoints",
+   "kind": "repo"
+  },
+  {
+   "id": "deitybody",
+   "kind": "repo"
+  },
+  {
+   "id": "satsang-practice",
+   "kind": "repo"
+  },
+  {
+   "id": "docs/agents-index.md",
+   "kind": "doc"
+  },
+  {
+   "id": "data/docs.json",
+   "kind": "data"
+  },
+  {
+   "id": "tools/doc_check.py",
+   "kind": "code"
+  }
+ ],
+ "edges": [
+  {
+   "from": "svatantrya",
+   "to": "trika-x",
+   "kind": "documents",
+   "note": "proof pillar doc; trika-x IS the source of the formal numbers"
+  },
+  {
+   "from": "svatantrya",
+   "to": "openpatala",
+   "kind": "documents",
+   "note": "identity pillar doc"
+  },
+  {
+   "from": "svatantrya",
+   "to": "translation-work",
+   "kind": "documents",
+   "note": "evidence pillar doc"
+  },
+  {
+   "from": "svatantrya",
+   "to": "svread",
+   "kind": "documents",
+   "note": "surface pillar doc"
+  }
+ ]
+}
