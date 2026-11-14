@@ -1,5 +1,11 @@
 # 30 — Formal proofs (formal-trika Lean spine)
 
+> For the full plain-language account of what trika-x is and does — the five
+> jobs, every component, what consumes it downstream, the exact ChatGPT path,
+> and why it exists — see
+> [`WHAT-TRIKA-X-DOES.md`](https://github.com/prx0r/trika-x/blob/main/WHAT-TRIKA-X-DOES.md)
+> in the trika-x repo. This page keeps the numbers; that page keeps the story.
+
 Lean's `decide` is the first estate component that **proves** instead of
 scoring. Heuristic PASS is advisory; a checked theorem plus a refused mutant is
 a fact about a finite model. This is the proof-carrying spine everything hangs
