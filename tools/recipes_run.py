@@ -210,6 +210,38 @@ def R8_judge(o):
 
 # Each recipe: (name, purpose, gather, fix, checks, proved, relevance).
 # checks = [(label, predicate(observed)->bool)] — named so a failure says WHY.
+def R9_gather():
+    d = mcp_call("openpatala__search_bibliography", {"q": "tantra", "limit": 3})
+    res = d.get("results") or []
+    return {"status": d.get("status"), "total": d.get("total"),
+            "results": len(res),
+            "sha_len": len(d.get("response_sha256") or ""),
+            "first_has_id": bool(res) and bool((res[0] or {}).get("work_id"))}
+
+
+def R10_gather():
+    d = mcp_call("treeka__chain", {"work": "tantrasara-a08"})
+    ents = d.get("entries") or {}
+    shaped = all(isinstance(e, dict) and e.get("work") and e.get("verses")
+                 for e in ents.values()) if ents else False
+    return {"work": d.get("work"), "rows": d.get("rows"),
+            "entries": len(ents), "entries_shaped": shaped}
+
+
+def R11_gather():
+    d = mcp_call("scholar__wheel_level", {"level": 1})
+    return {"level": d.get("level"), "has_title": bool(d.get("title")),
+            "has_url": bool(d.get("url")), "prompt_len": len(str(d.get("prompt") or "")),
+            "has_gate": isinstance(d.get("gate"), dict)}
+
+
+def R12_gather():
+    d = mcp_call("translate__status", {"work": "tantrasara-a08"})
+    reg = d.get("registry") or {}
+    return {"registry_work": reg.get("work"), "has_status": bool(d.get("STATUS")),
+            "registry_verses": reg.get("verses")}
+
+
 RECIPES = [
     ("R1_identity",
      "Resolve a known work to EXACT+id; an unknown to NONE. Never invent.",
@@ -294,6 +326,45 @@ RECIPES = [
       ("trace returns a real verdict", lambda o: o.get("trace") in ("COMPLETE", "PARTIAL"))],
      "a proof-complete chunk may still withhold its reading, and the surface says which — no silent empty.",
      "prevents an agent from assuming 'proof exists => passage readable' and inventing a reading where none is served."),
+    ("R9_bibliography",
+     "search_bibliography returns OK + total + results + a response hash.",
+     R9_gather, None,
+     [("status OK", lambda o: o.get("status") == "OK"),
+      ("total is a positive int", lambda o: isinstance(o.get("total"), int) and o.get("total", 0) >= 1),
+      ("results returned", lambda o: o.get("results", 0) >= 1),
+      ("response_sha256 is 64-hex", lambda o: o.get("sha_len") == 64),
+      ("first result carries a work_id", lambda o: o.get("first_has_id") is True)],
+     "bibliographic search is real (a query returns ranked works with a stable response hash), not a title-keyword guess.",
+     "finding a work by name/alias/identifier is the first half of every research task; the response hash lets a caller cite the exact answer."),
+
+    ("R10_treeka",
+     "treeka__chain returns the argument graph rows, each with work+verses.",
+     R10_gather, None,
+     [("rows >= 1", lambda o: isinstance(o.get("rows"), int) and o.get("rows", 0) >= 1),
+      ("entries present", lambda o: o.get("entries", 0) >= 1),
+      ("every entry names work+verses", lambda o: o.get("entries_shaped") is True)],
+     "the work-to-passages argument graph is assembled and every entry is anchored (work + verse range).",
+     "an agent exploring a text needs the passage graph, not isolated chunks; this proves the join exists and is anchored."),
+
+    ("R11_learning",
+     "wheel_level returns a teaching level with prompt + gate + url.",
+     R11_gather, None,
+     [("level echoes 1", lambda o: o.get("level") == 1),
+      ("has title", lambda o: o.get("has_title") is True),
+      ("has a server-scored gate", lambda o: o.get("has_gate") is True),
+      ("prompt is substantive", lambda o: o.get("prompt_len", 0) > 100),
+      ("has a source url", lambda o: o.get("has_url") is True)],
+     "the learning surface serves a real, gate-bearing level (prompt + scoring rule + source), not a bare form list.",
+     "an agent teaching Sanskrit needs the level text AND the server-side gate so a score is never self-reported."),
+
+    ("R12_translation_state",
+     "translate__status returns registry state for a work with a status summary.",
+     R12_gather, None,
+     [("registry work matches", lambda o: o.get("registry_work") == "tantrasara-a08"),
+      ("STATUS present", lambda o: o.get("has_status") is True),
+      ("registry reports verse count", lambda o: isinstance(o.get("registry_verses"), int))],
+     "the translation lane's public read returns the work's registry state honestly (machine-proposed vs gold is in the payload).",
+     "an agent must be able to say whether a work is gold or merely machine-proposed before quoting it."),
 ]
 
 
@@ -314,6 +385,13 @@ MUTATIONS = {
     "R7_fail_closed": [("unknown_tool_errored", False), ("bad_target_errored", False),
                        ("empty_query_status", "EXACT")],
     "R8_honest_boundary": [("evidence_is_honest", False), ("trace", "CORRUPT")],
+    "R9_bibliography": [("status", "NONE"), ("total", 0), ("results", 0),
+                        ("sha_len", 0), ("first_has_id", False)],
+    "R10_treeka": [("rows", 0), ("entries", 0), ("entries_shaped", False)],
+    "R11_learning": [("level", 2), ("has_title", False), ("has_gate", False),
+                     ("prompt_len", 0), ("has_url", False)],
+    "R12_translation_state": [("registry_work", "wrong"), ("has_status", False),
+                              ("registry_verses", None)],
 }
 
 
