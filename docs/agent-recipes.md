@@ -1,107 +1,86 @@
-# AGENT RECIPES — tested sequences for real work
+# AGENT RECIPES — tested sequences, with what each actually proves
 
-*Status: CANONICAL. Eight recipes an external agent actually runs against the
-public surface (no key, no box). Every one is executable and was run live on
-2026-11-14 — see `data/recipes-report.json` (8/8). Run them yourself:
-`python3 tools/recipes_run.py`.*
+*Status: CANONICAL. Eight recipes an external agent runs against the public
+surface (no key, no box). Every one is executable, was run live on 2026-11-14
+(`data/recipes-report.json`, 8/8), and every check has a named negative control
+(`tools/recipes_run.py --selftest` proves each judge rejects deliberate
+corruption). Run them: `python3 tools/recipes_run.py`.*
 
-Each recipe states purpose, the exact calls, the expected shape, and the
-honesty rule. The runner (`tools/recipes_run.py`) logs observed values so a
-result is interpretable, not a vibe.
+Each recipe is split into **gather** (live calls → observed) and **judge**
+(named checks). A failure names the exact check that broke, not "failed".
 
 ---
 
 ## R1 — Identity: resolve, never invent
 
-**Purpose:** turn a name into a stable `work_id`, and admit when there isn't one.
+**Calls:** `openpatala__resolve {"q":"bodhapancadasika"}` · `{"q":"zzzz-not-a-work-qqq"}`
+**Passes when:** known → `EXACT` with a non-empty `entity.id`; unknown → `NONE`; the known call carried no error.
+**What it proves:** the resolver distinguishes an exact hit from a miss and does not fabricate an entity for garbage.
+**Why relevant:** an agent must get a stable `work_id` before any downstream call; guessing an id poisons every later claim.
+**Negative controls:** status→NONE, id→"", unknown→EXACT, error injected — each must fail.
 
-```
-openpatala__resolve {"q":"bodhapancadasika"}   → {"status":"EXACT","entity":{"id":"bodhapancadasika",...}}
-openpatala__resolve {"q":"zzzz-not-a-work-qqq"} → {"status":"NONE", ...}
-```
-**Expected:** known → `EXACT` + `entity.id`; unknown → `NONE` (never a fabricated entity).
-**Rule:** `CANDIDATES`/`NONE` = draft-only downstream. Never substitute a title string for an id.
+## R2 — Evidence: layers with verifiable hashes and honest review state
 
-## R2 — Evidence: layers with verifiable hashes
+**Call:** `scholar__passage_evidence {"work":"bodhapancadasika","target":"bod-p01-v01"}`
+**Passes when:** ≥1 layer, ≥1 `layer_sha256`, every hash is 64-hex, `review_state.default` ∈ {`UNREVIEWED`,`SELF_ATTESTED`}.
+**What it proves:** the evidence payload is hash-bearing and its review state is honest by default.
+**Why relevant:** an agent quoting a passage must hand the reader a hash and the *real* review state, never a claim of review.
 
-**Purpose:** read a passage with per-layer content, hashes, and review state.
+## R3 — Proof: named Lean theorems + a coverage denominator
 
-```
-scholar__passage_evidence {"work":"bodhapancadasika","target":"bod-p01-v01"}
-→ {layers:{t1,l0,argmap,l2,c1,l3,l4,c2}, layer_sha256:{...}, stack_sha256, review_state:{default:"UNREVIEWED"}, projection_sha256}
-```
-**Expected:** ≥1 layer, every `layer_sha256` a 64-hex digest, `review_state.default` in {`UNREVIEWED`,`SELF_ATTESTED`}.
-**Rule:** a hash proves *identity*, not *correctness*. `UNREVIEWED` is the honest default — report it.
+**Calls:** `formal__trace {"work":"tantrasara-a08","target":"tsa08-p03"}` · `formal__gaps {}`
+**Passes when:** verdict `COMPLETE`; ≥1 theorem; every theorem is named (`File :: thm`); gaps carry a `total`.
+**What it proves:** the formal chain resolves to named, registered Lean theorems, and coverage carries its denominator.
+**Why relevant:** "we checked it" vs "trust us" — an agent must be able to show the theorem names.
+**Scope caveat:** `COMPLETE` means *links present*, not "correct or reviewed". Read `verdict_scope`.
 
-## R3 — Proof: the formal chain
+## R4 — Coverage honesty: a fraction, never a headline
 
-**Purpose:** get the machine-checked chain and the coverage denominator.
-
-```
-formal__trace {"work":"tantrasara-a08","target":"tsa08-p03"}
-→ {verdict:"COMPLETE", formal:{theorems:[...named Lean theorems...]}, identity:{status:"BOUND"}, verdict_scope:...}
-formal__gaps {}
-→ {coverage:"17/154", total:154, gap_count:138, gaps:[...]}
-```
-**Expected:** `COMPLETE` + named theorems; gaps carry a denominator.
-**Rule:** `COMPLETE` means *links present*, not "the translation is correct or reviewed". Read `verdict_scope`.
-
-## R4 — Coverage honesty: a fraction, never a bare number
-
-```
-formal__gaps {} → coverage "17/154", total 154, gaps[] non-empty
-```
-**Rule:** never report coverage without its denominator and gap list.
+**Call:** `formal__gaps {}`
+**Passes when:** `coverage` is a `n/m` string; `total` a positive int; ≥1 gap listed; `gap_count` equals the list length — or, if the server truncates, `truncated:true` and `returned == len(gaps)`.
+**What it proves:** coverage is never a bare number; the gap list is consistent with `gap_count`.
+**Why relevant:** the whole estate's honesty rests on never quoting coverage without its gap list. *(This recipe found a real bug: the server returned `gap_count:138` with only 60 gaps and no truncation flag. Fixed in trika-x: full list returned + explicit `returned`/`truncated`.)*
 
 ## R5 — Outsider verification (the killer recipe)
 
-**Purpose:** prove the whole chain is checkable with only fetch + sha256.
-
-```
-GET /data/verify/bodhapancadasika-bod-p01/manifest.json   → artifacts[{role:"source-bytes", sha256, name}]
-GET /data/verify/bodhapancadasika-bod-p01/source.txt        → bytes
-sha256(bytes) == manifest artifact sha256                   → TRUE
-```
-**Expected:** manifest 200, artifact 200, recomputed hash equals the recorded one.
-**Rule:** this is the one an agent should cite when asked "how do I know this is real?" — no code, no account, no trust in us.
+**Calls:** `GET /data/verify/bodhapancadasika-bod-p01/manifest.json` → `GET .../source.txt` (+ a `layer-*` artifact)
+**Passes when:** manifest 200; source artifact 200 and non-empty; recorded sha is 64-hex; **recomputed sha256 equals the recorded hash**; a layer artifact also verifies if present.
+**What it proves:** an outsider recomputes the published bytes' sha256 with no code and no account and it matches.
+**Why relevant:** this is the answer to "how do I know this is real?" — fetch, `sha256sum`, compare. If this fails, nothing else is citable.
 
 ## R6 — Full research flow (identity → evidence → proof)
 
-**Purpose:** the canonical chain on a work that carries all three.
-
-```
-openpatala__resolve {"q":"paramarthasara"}                      → EXACT, work_id
-scholar__passage_evidence {"work":"paramarthasara","target":"param-p04-v29"}  → 7 layers
-formal__trace {"work":"paramarthasara","target":"param-p04"}   → COMPLETE, identity BOUND
-```
-**Expected:** all three succeed and the trace's `identity` hop is `BOUND`.
-**Rule:** read at verse scope (`…-v29`), prove at chunk scope (`param-p04`) — same chunk, two granularities.
-
-## R8 — Honest boundary (proof ≠ readable evidence)
-
-**Purpose:** do not assume a COMPLETE trace implies the passage is readable.
-
-```
-scholar__passage_evidence {"work":"tantrasara-a08","target":"tsa08-p03"}  → ToolError: "Passage unavailable or withheld"
-formal__trace          {"work":"tantrasara-a08","target":"tsa08-p03"}  → verdict COMPLETE (links present)
-```
-**Expected:** evidence explicitly withheld/unavailable, trace may still be COMPLETE.
-**Rule:** report both states. A withheld reading is data, not an error to paper over.
+**Calls:** `resolve {"q":"paramarthasara"}` · `passage_evidence {"work":"paramarthasara","target":"param-p04-v29"}` · `formal__trace {"work":"paramarthasara","target":"param-p04"}`
+**Passes when:** identity `EXACT`, `work_id=="paramarthasara"`; evidence has layers; trace `COMPLETE`; trace `identity` hop `BOUND`.
+**What it proves:** one work carries the whole chain end to end and the trace's identity hop binds to the resolved work.
+**Why relevant:** this is the actual task — resolve, read, prove, with identity consistent across all three. Read at verse scope, prove at chunk scope.
 
 ## R7 — Fail-closed: nothing fakes success
 
-```
-scholar__passage_evidence {"work":"bodhapancadasika","target":"../etc"}  → ToolError (bad target)
-no_such_tool_zzz {}                                                       → "unknown tool" error
-```
-**Rule:** errors are clean and explicit; a call never returns an empty success where truth runs out.
+**Calls:** unknown tool · `passage_evidence` bad target (`../etc`) · `resolve {"q":""}`
+**Passes when:** unknown tool errors; bad target errors; empty query returns `NONE`/`INVALID_QUERY`.
+**What it proves:** the surface fails closed — bad input errors, empty input resolves to nothing, never a silent empty success.
+**Why relevant:** an agent must trust that an empty answer means "no result", not "the tool quietly did nothing".
+
+## R8 — Honest boundary: proof ≠ readable evidence
+
+**Calls:** `passage_evidence {"work":"tantrasara-a08","target":"tsa08-p03"}` · `formal__trace` same
+**Passes when:** evidence is *present* **or** explicitly *withheld* (never a silent empty), and the trace returns a real verdict (`COMPLETE`/`PARTIAL`).
+**What it proves:** a proof-complete chunk may still withhold its reading, and the surface says which.
+**Why relevant:** prevents an agent from assuming "proof exists ⇒ passage readable" and inventing a reading where none is served. *(Real example: `tantrasara-a08/tsa08-p03` — trace COMPLETE, reading withheld.)*
 
 ---
 
 ## The pattern behind all eight
 
-**resolve identity → read evidence (with hashes + review state) → check proof →
+**resolve identity → read evidence (hashes + review state) → check proof →
 report gaps → verify bytes.** Every step answers honestly: `NONE`, `UNREVIEWED`,
 `WITHHELD`, `PARTIAL`, `UNPINNED` are valid answers and must be reported as such.
-The runner logs the observed value beside every PASS/FAIL, so a run is a record,
-not an opinion.
+
+## How the tests are themselves tested
+
+`tools/recipes_run.py --selftest` runs each recipe live (must pass) and then
+applies deliberate corruptions to the observed data (e.g. `verdict→PARTIAL`,
+`recomputed_matches→false`, `evidence_is_honest→false`) and asserts the judge
+**fails** on every one. A recipe that cannot be made to fail is not a test.
+Current: all 8 pass live, all mutations caught.
