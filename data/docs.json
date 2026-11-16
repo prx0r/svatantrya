@@ -245,7 +245,7 @@
     "note": "Timestamped re-verification + drift findings + next plan. (2026-11-16.)"
   },
   "docs/openpatala-runtime.md": {
-   "status": "CANONICAL",
+    "status": "CANONICAL",
    "note": "openpatala as agent identity surface + runtime spine for translation/formal. (2026-11-14.)",
    "allow_stale": [
     "1034 works",
@@ -256,8 +256,16 @@
     "8/8",
     "479",
     "555",
-    "2 recorded"
-   ]
+     "2 recorded"
+    ]
+  },
+  "docs/ratie-paper-2026-11-16.md": {
+    "status": "HISTORICAL",
+    "note": "Machine-assembled Ratie paper (CH7 shape, estate-anchored). PARTIAL by construction. (2026-11-16.)"
+  },
+  "docs/ratie-chatgpt-brief-2026-11-16.md": {
+    "status": "HISTORICAL",
+    "note": "ChatGPT feedback protocol for the Ratie assembly: 4 asks + boundaries + recording. (2026-11-16.)"
   }
- }
+  }
 }
