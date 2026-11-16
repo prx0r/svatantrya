@@ -231,14 +231,18 @@
    ]
   },
   "docs/formal-audit-chain.md": {
-   "status": "CANONICAL",
-   "note": "The proven method: proving(Lean)→derivation(trace)→construction(essay gates)→publication(human). (2026-11-14.)",
-   "allow_stale": [
-    "17/154",
-    "154 chunks",
-    "6 essays",
-    "0 BROKEN"
-   ]
+    "status": "CANONICAL",
+    "note": "The proven method: proving(Lean)→derivation(trace)→construction(essay gates)→publication(human). (2026-11-14.)",
+    "allow_stale": [
+     "16/154",
+     "154 chunks",
+     "6 essays",
+     "0 BROKEN"
+    ]
+  },
+  "docs/progress-report-2026-11-16.md": {
+    "status": "HISTORICAL",
+    "note": "Timestamped re-verification + drift findings + next plan. (2026-11-16.)"
   },
   "docs/openpatala-runtime.md": {
    "status": "CANONICAL",
