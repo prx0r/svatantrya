@@ -9,7 +9,9 @@
    "note": "Front door: thesis, map, laws. (2026-11-14.)",
    "allow_stale": [
     "1034\\ works",
-    "206\\ theorems"
+    "206\\ theorems",
+    "214\\ theorems",
+    "159\\ entries"
    ]
   },
   "PAPER.md": {
@@ -24,7 +26,9 @@
     "210\\ tools",
     "51\\ tools",
     "909\\ passages",
-    "132\\ tests"
+    "132\\ tests",
+    "214\\ theorems",
+    "159\\ entries"
    ]
   },
   "docs/00-thesis.md": {
@@ -54,7 +58,9 @@
     "155\\ entries",
     "16/154",
     "206\\ theorems",
-    "132\\ tests"
+    "132\\ tests",
+    "214\\ theorems",
+    "159\\ entries"
    ]
   },
   "docs/40-federation-mcp.md": {
@@ -132,7 +138,9 @@
     "9/9",
     "909\\ bundles",
     "909\\ passages",
-    "132\\ tests"
+    "132\\ tests",
+    "214\\ theorems",
+    "159\\ entries"
    ]
   },
   "docs/70-v1-tracker.md": {
@@ -157,7 +165,9 @@
     "115\\ tools",
     "155\\ entries",
     "206\\ theorems",
-    "132\\ tests"
+    "132\\ tests",
+    "214\\ theorems",
+    "159\\ entries"
    ]
   },
   "docs/90-glossary.md": {
@@ -326,6 +336,18 @@
   "NORTHSTAR-2-2026-11-17.md": {
    "status": "CANONICAL",
    "note": "OWNER VERBATIM: Trika as source, general theory as output, F research tracks. Never edit. (2026-11-17.)"
+  },
+  "CONSCIOUSNESS-STUDIES.md": {
+   "status": "CANONICAL",
+   "note": "Formalisation ladder A-E + placement in consciousness studies (10 comparisons). (2026-11-17.)",
+   "allow_stale": [
+    "214\\ theorems",
+    "159\\ entries",
+    "16/154",
+    "6\\ theorems",
+    "10\\ comparisons",
+    "6\\ named"
+   ]
   }
  }
 }
