@@ -321,10 +321,12 @@ the full Yan et al. (2026) article once accessible.
 - Fujimoto, N. (2026). Nāgārjuna's Empty Vessel: A Lean 4 Axiom-Free Formal
   Encoding. doi:10.5281/zenodo.20838891.
 - Scherf, M. Advaita Vedānta: A Formal Axiomatization (Lean 4).
-  github.com/matthew-scherf/Advaita.
+  github.com/matthew-scherf/Advaita/ (repo verified live 2026-11-17; Zenodo doi:10.5281/zenodo.17333604).
 - Yan, T. et al. (2026). Formalizing consciousness: a comparative mathematical
   analysis of leading theories. *Biological Cybernetics*.
-  doi:10.1007/s00422-026-01068-y.
+  doi:10.1007/s00422-026-01068-y. **Read as abstract + metadata + companion
+  papers only; the full text is paywalled and was not read. Method reconstructed,
+  not cited as read.**
 - Kirchhoff, M. et al. (2018). The Markov blankets of life. *J. R. Soc.
   Interface*. PMC5805980.
 

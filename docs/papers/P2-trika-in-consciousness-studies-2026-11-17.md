@@ -217,17 +217,17 @@ the conversation on terms it can survive.
 
 ## References
 
-**Verified in-session (2026-11-17):** Prueitt, Sezer & Sacchet (2025),
+**Verified in-session (2026-11-17) — primary or multi-source fetches:** Prueitt, Sezer & Sacchet (2025) [PMC12687940, fetched],
 *Neuroscience of Consciousness* niaf049; Berwian et al. (2025), *Communications
 Psychology* s44271-025-00251-4; Smith, Moutoussis & Bilek (2021) PMC8115057;
 Mansell & Huddy (2020) *Frontiers in Psychiatry* fpsyt.2020.00624; Schiepek, Aas &
-Viol (2016) PubMed 27262423; arXiv:2511.05580; arXiv:2509.02144;
+Viol (2016) PubMed 27262423; arXiv:2511.05580 [abs page fetched; PDF content via verified excerpts]; arXiv:2509.02144 [abs page fetched with full abstract];
 arXiv:2605.12548; Chapman (2026) *Comparative Philosophy* 17(2);
 doi:10.1163/9789004691568_026; Tavva & Singh (2015) CEUR-WS Vol-1517; Fujimoto
 (2026) doi:10.5281/zenodo.20838891; Scherf, github.com/matthew-scherf/Advaita;
-Yan et al. (2026) *Biological Cybernetics* doi:10.1007/s00422-026-01068-y;
+Yan et al. (2026) *Biological Cybernetics* doi:10.1007/s00422-026-01068-y **[abstract + metadata only; full text not read]**;
 Kirchhoff et al. (2018) PMC5805980.
 
-**Standard references, not re-verified in-session:** Rosenthal (HOT); Tononi and
+**Standard references, not re-fetched this session** (textbook-level claims; re-fetch before submission): Rosenthal (HOT); Tononi and
 colleagues (IIT); Baars / Dehaene and colleagues (GWT); Johnson and colleagues
 (QRI symmetry theory).

@@ -176,3 +176,30 @@ failure.
       repeating "RP³ is necessary given P1–P4".
 - [ ] Confirm `PGL(4,R)` is the right group for the Trika generalisation before
       writing it as anything but a proposal.
+
+---
+
+## 9. Citation verification log (2026-11-17)
+
+The search layer returned two 404s that turned out to be **fetcher quirks, not
+fabrications** — and the check forced a canonical-URL discipline into the
+records. Results:
+
+| Item | Status | Evidence |
+|---|---|---|
+| Advaita Lean repo (Scherf) | **VERIFIED**, multi-source | repo page resolves (trailing slash), Zenodo doi:10.5281/zenodo.17333604, SuttaCentral discussion; Lean v4.12.0, MIT, 129 axioms confirmed |
+| Chapman modal catuṣkoṭi | **VERIFIED**, multi-source | SJSU scholarworks full text (Vol 17 No 2, pp 4–17), GitHub repo rollofthedice/modal-catuskoti-lean exists, author Substack confirms peer review; DOI resolver 404 was a resolver quirk, canonical URL is the scholarworks page |
+| arXiv:2605.12548 (cubical NN) | **VERIFIED**, fetched-primary | abs page: cs.LO, 10 May 2026, authors/abstract match |
+| arXiv:2511.05580 (psychodynamics SMC) | **VERIFIED**, fetched-primary | abs page + PDF content: Bagley & Khoshnan, SMC/process theory, cogits confirmed |
+| arXiv:2509.02144 (AI therapy) | **VERIFIED**, fetched-primary | abs page: Herbener & Damholdt, genuineness/credibility gaps confirmed |
+| Prueitt/Sezer/Sacchet 2025 | **VERIFIED**, fetched-primary | PMC12687940, PMID, DOI, Harvard-hosted PDF; heterostatic/homeostatic distinction and the "not allostatic imperativists" disclaimer confirmed verbatim |
+| Fujimoto Zenodo 20838891 | **VERIFIED**, multi-source | Zenodo record + author blog; **caveat**: independent researcher + AI substrate, self-published — cited for the verification-boundary practice, not as peer review |
+| Tavva & Singh JOWO 2015 | **VERIFIED**, multi-source | CEUR Vol-1517 PDF + researchr + JOWO program + author pages |
+| Roy & Posina 2024 | **VERIFIED**, multi-source | NIAS record + ResearchGate abstract + Scholar cites; Brill chapter pp 450–478 |
+| Yan et al. 2026 | **ABSTRACT ONLY** | full text paywalled/JS-blocked; method reconstructed, marked as such everywhere it is cited |
+| HOT / IIT / GWT / QRI | **STANDARD, not re-fetched** | textbook-level claims; re-fetch before any submission |
+
+Enforcement added to `tools/compare.py`: every record needs
+`citation {sources, verified date, method}`; `fit` requires fetched-primary or
+multi-source; a `not-comparable` or `standard`-only record is legal but flagged.
+Verification is now a gate, not a hope.
