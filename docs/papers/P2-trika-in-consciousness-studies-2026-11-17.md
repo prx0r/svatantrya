@@ -16,7 +16,7 @@ compared. We argue this produces equivocation, and propose instead a
 other theory actually provides, and record a verdict of `fit`, `partial`, or
 `incompatible` — where *incompatible requires naming the precise obstruction*.
 We apply the method to Trika Śaivism as encoded in a machine-checked corpus
-(225 theorems, 159 registry entries, 57 negative-control twins) against ten
+(226 theorems, 159 registry entries, 57 negative-control twins) against ten
 interlocutors. Result: **one fit, four partial mappings, four incompatibilities with named
 obstructions, and two cases that are not comparable because they answer a
 different explanatory question.** We argue the six are the

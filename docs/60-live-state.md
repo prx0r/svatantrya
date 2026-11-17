@@ -11,7 +11,7 @@ is the highest-severity finding in this project.
 |---|---|---|
 | Lean control | **53 PASS / 0 FAIL** | `sh formal-trika/control/run.sh` (trika-x, Lean 4.34.1) |
 | Lean recognition | **26 passed / 0 failed** | `sh formal-trika/recognition/run.sh` |
-| EVIDENCE | **225 theorems · 165 entries · 2 exemptions · 1 generated · 0 problems** | `tools/evidence_check.py` |
+| EVIDENCE | **226 theorems · 166 entries · 2 exemptions · 1 generated · 0 problems** | `tools/evidence_check.py` |
 | Coverage | **16/154 chunks (10%)** | same |
 | TABLE | **rc=0** | `tools/table.py --check` |
 | Axioms | **CLEAN (static)** | `tools/axiom_audit.py --check` |

@@ -138,7 +138,7 @@ def recognise (f : Field) : Field :=
                      | .primary => .instrument) }
 ```
 
-Twelve theorems in the core file (six operation, two invariance, two exclusion, two positioning inventory) plus a Z/2 action layer (eight theorems: group laws, action laws, content invariance, generator agreement, involution from the group law) and a cut result (no cross-block flow):
+Twelve theorems in the core file (two positioning inventory, six operation, two invariance, two exclusion), plus a Z/2 action layer (three group laws, action identity and composition, content invariance, generator agreement, involution from the group law), a cut result (no cross-block flow), and a one-proposition testbed joining dynamics and action on a single carrier:
 
 | Theorem | Statement | Method |
 |---|---|---|
@@ -150,6 +150,12 @@ Twelve theorems in the core file (six operation, two invariance, two exclusion, 
 | `mode_switch_preserves_content` | the two modes of access carry the same content | `decide` |
 | `sample_no_production` | no transition in the model produces a state (exclusion C1) | `decide` |
 | `sample_one_process` | extrinsic redescription is the identity on every field (exclusion C2) | `decide` |
+| `z2_closed`, `z2_assoc`, `z2_selfinv` | the action group is exactly Z/2 | `decide` |
+| `act_preserves_content` | the whole group action preserves content | `decide` |
+| `generator_agrees_on_positioning` | the flip is the generator of the action | cases + `rfl` |
+| `flip_squared_is_identity_op` | involution from 1+1=0, not asserted | `decide` |
+| `no_cross_cut_flow` | no dynamics cross a block boundary (the Φ = 0 base case) | `decide` |
+| `testbed_joint` | dynamics stay in-block AND the action preserves content, one term | `decide` |
 
 The last one is the formalisable heart of the identity theory: the claim that
 switching mode of access changes *nothing* about the process, only how it is

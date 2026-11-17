@@ -52,7 +52,7 @@ insiders; the current one is checkable by a stranger.
 PILLAR 1 — SURFACE            PILLAR 2 — EVIDENCE             PILLAR 3 — COMPARISON
 one system, 4 turns           layers T1→L4, traces,           xmodel tensions + comparisons
 openpatala + scholar +        trail, EVIDENCE registry        verdicts: fit/partial/incompatible
-formal + treeka               (214 thm / 165 entries)         essays generated structurally
+formal + treeka               (214 thm / 166 entries)         essays generated structurally
         │                             │                                │
         └──────── ids ────────────────┴─────────── anchors ────────────┘
                      everything resolves through the same ID grammar
@@ -88,7 +88,19 @@ shared formal object and the mapping. Otherwise it is `partial` at best.
 
 ## 4. Next steps (ordered; owner vs agent; done-when)
 
-### W1 — Review the ten verdicts *(OWNER, blocks everything downstream)*
+### Landed this pass (autonomous, 2026-11-17)
+
+- Z/2 action layer: the flip proved to be the generator of exactly the symmetry
+  group the structure admits (`generator_agrees_on_positioning`,
+  `flip_squared_is_identity_op`); involution derived, not asserted.
+- Cut result: `no_cross_cut_flow` — the Phi = 0 base case without a Phi
+  definition (factorisation, not a measure).
+- Minimal testbed: one carrier, dynamics + action jointly checked
+  (`testbed_joint`); 62 twins, control gate green; EVIDENCE 226/166.
+- PCM record strengthened: partial with a proved discrete skeleton; continuity
+  to PGL(4,R) named as the remaining gap.
+
+## W1 — Review the ten verdicts *(OWNER, blocks everything downstream)*
 Why: every paper's related-work section depends on them, and the machine cannot
 sign. Done when: six `incompatible` and three `partial` verdicts have a named
 reviewer's accept/reject, recorded as a dated note; any rejection is a new record,

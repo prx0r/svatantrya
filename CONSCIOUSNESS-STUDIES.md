@@ -57,6 +57,7 @@ basis.** Six incompatibilities is not a failure — it is the actual finding.
 | **Allostasis** (Prueitt et al. 2025) | partial | apoha/exclusion maps; they say adaptation, we say removal of a covering |
 | **PCT** (Mansell & Huddy) | partial | readiness gate maps; **sudden gains conflict with "no leaps"** |
 | **Nāgārjuna-in-Lean** (Fujimoto 2026) | **fit** | methodological: both put the interpretive layer outside the kernel |
+| **PCM** (Rudrauf et al.) | **partial, strengthened** | S = T ∘ R *is* our content-invariance; action group **proved Z/2** (generator + involution derived); one-carrier testbed built; continuity to PGL(4,R) named, not bridged |
 
 **Field-level host (verified 2026-11-17):** *Formalizing consciousness: a
 comparative mathematical analysis of leading theories*, Biological Cybernetics
@@ -71,13 +72,13 @@ the field already expects formal comparison rather than manifesto.
 Each obstruction names the exact build that would change the verdict. This is
 the roadmap, and it is deliberately expensive:
 
-| Obstruction | What would have to be built |
-|---|---|
+| Obstruction | What would have to be built | Status |
+|---|---|---|
 | no Φ (IIT) | a dynamics layer: a transition system over the finite states, then Φ |
 | no broadcast (GWT) | competition + a capacity bound over the same states |
 | no state ontology (HOT) | a level of mental states with a meta-relation; then test additivity |
 | no qualia geometry (QRI) | a metric on the aesthetic modes; then a valence function |
-| no morphisms (Yoneda) | a category whose arrows are the stipulated pairings, with a composition law |
+| no morphisms (Yoneda) | a category whose arrows are the stipulated pairings, with a composition law | open |
 
 **Do not build these to "win" the comparison.** Build one only if it buys a
 prediction. The value of an incompatible verdict is that it stops the paper from
@@ -91,12 +92,14 @@ Two papers, not one:
 
 1. **Method paper (writable now).** "Formalising the frame, not the identity:
    what a proof assistant can and cannot do for consciousness theories." The
-   aperture/inexternalism core is the worked example: six theorems + one twin,
-   with layers A–E named. The claim is methodological and defensible.
+   aperture/inexternalism core is the worked example (core file + Z/2 action
+   layer + cut result + testbed, 62 twins), with layers A–E named. The claim
+   is methodological and defensible.
 2. **Comparison paper (writable after review).** Trika in consciousness
-   studies: 10 comparisons, 6 named incompatibilities, 3 partial mappings, 1
-   methodological fit. The contribution is the *map of what does not connect*,
-   which is more valuable than a fourth "everything is connected" essay.
+   studies: 11 comparisons — 4 incompatible with named obstructions, 4 partial
+   (one strengthened: PCM now has a proved Z/2 skeleton + testbed), 1 fit,
+   2 not-comparable on scope grounds. The contribution is the *map of what does
+   not connect*, which is more valuable than a fourth "everything is connected" essay.
 
 **What neither paper may say:** that the phenomenal identity is proved, that
 Φ has been computed, that a valence geometry exists, or that trika-x is a
@@ -110,4 +113,4 @@ theory of state consciousness.
 - An identity claim is a definition plus consequences, never a theorem.
 - A twin must fail at exactly one proposition, or the gate rejects it.
 - BLOCKED ≠ PASS; incompatible ≠ refuted.
-- Counts carry denominators: 225 theorems · 165 entries · 16/154 passages.
+- Counts carry denominators: 226 theorems · 166 entries · 16/154 passages.
