@@ -52,7 +52,7 @@ insiders; the current one is checkable by a stranger.
 PILLAR 1 — SURFACE            PILLAR 2 — EVIDENCE             PILLAR 3 — COMPARISON
 one system, 4 turns           layers T1→L4, traces,           xmodel tensions + comparisons
 openpatala + scholar +        trail, EVIDENCE registry        verdicts: fit/partial/incompatible
-formal + treeka               (214 thm / 166 entries)         essays generated structurally
+formal + treeka               (214 thm / 175 entries)         essays generated structurally
         │                             │                                │
         └──────── ids ────────────────┴─────────── anchors ────────────┘
                      everything resolves through the same ID grammar

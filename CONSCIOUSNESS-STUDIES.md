@@ -113,4 +113,4 @@ theory of state consciousness.
 - An identity claim is a definition plus consequences, never a theorem.
 - A twin must fail at exactly one proposition, or the gate rejects it.
 - BLOCKED ≠ PASS; incompatible ≠ refuted.
-- Counts carry denominators: 226 theorems · 166 entries · 16/154 passages.
+- Counts carry denominators: 226 theorems · 175 entries · 16/154 passages.
