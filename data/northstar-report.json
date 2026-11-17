@@ -1,0 +1,86 @@
+{
+ "format": "svatantrya.northstar-eval/1",
+ "northstar": "NORTHSTAR-2026-11-17.md",
+ "checked_at": "2026-11-17T05:25:56Z",
+ "endpoint": "https://mcp.svatantrya.net/mcp",
+ "work": "tantrasara-a08",
+ "concept": "kancuka",
+ "passed": 4,
+ "total": 4,
+ "turns": {
+  "T1_work_status": {
+   "pass": true,
+   "failed_checks": [],
+   "observed": {
+    "work": "tantrasara-a08",
+    "coverage": "4/4",
+    "witnesses": 0,
+    "witness_state": "UNPINNED",
+    "rights": "NULL",
+    "traces": {
+     "COMPLETE": 4
+    }
+   },
+   "seconds": 1.34
+  },
+  "T2_concept": {
+   "pass": true,
+   "failed_checks": [],
+   "observed": {
+    "id": "kancuka",
+    "gloss_state": "NO_CONCEPT_ENTRY",
+    "tier": "T",
+    "anchors": [
+     "AnswerKey.lean :: key_five_kancukas",
+     "Kancuka.lean :: count_5",
+     "Kancuka.lean :: pairings_distinct"
+    ]
+   },
+   "seconds": 0.23
+  },
+  "T3_occurrences": {
+   "pass": true,
+   "failed_checks": [],
+   "observed": {
+    "count": 6,
+    "works": [
+     "ipvv",
+     "paramarthasara",
+     "parapravesika",
+     "tantrasara-a08"
+    ],
+    "sample": [
+     {
+      "work": "ipvv",
+      "verse_id": "chunk-v3-k-agama-prathamo-k8-11-close-v44"
+     },
+     {
+      "work": "paramarthasara",
+      "verse_id": "param-p02-v17"
+     },
+     {
+      "work": "paramarthasara",
+      "verse_id": "param-p03-v24"
+     }
+    ]
+   },
+   "seconds": 0.0
+  },
+  "T4_related": {
+   "pass": true,
+   "failed_checks": [],
+   "observed": {
+    "rows": 4,
+    "counts": {
+     "passages": 909,
+     "unargued": 578,
+     "cruxless": 123,
+     "essayless": 331,
+     "no_formal_reference": 893
+    }
+   },
+   "seconds": 1.5
+  }
+ },
+ "verdict": "OPERATIONAL"
+}

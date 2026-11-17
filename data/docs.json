@@ -231,21 +231,21 @@
    ]
   },
   "docs/formal-audit-chain.md": {
-    "status": "CANONICAL",
-    "note": "The proven method: proving(Lean)→derivation(trace)→construction(essay gates)→publication(human). (2026-11-14.)",
-    "allow_stale": [
-     "16/154",
-     "154 chunks",
-     "6 essays",
-     "0 BROKEN"
-    ]
+   "status": "CANONICAL",
+   "note": "The proven method: proving(Lean)\u2192derivation(trace)\u2192construction(essay gates)\u2192publication(human). (2026-11-14.)",
+   "allow_stale": [
+    "16/154",
+    "154 chunks",
+    "6 essays",
+    "0 BROKEN"
+   ]
   },
   "docs/progress-report-2026-11-16.md": {
-    "status": "HISTORICAL",
-    "note": "Timestamped re-verification + drift findings + next plan. (2026-11-16.)"
+   "status": "HISTORICAL",
+   "note": "Timestamped re-verification + drift findings + next plan. (2026-11-16.)"
   },
   "docs/openpatala-runtime.md": {
-    "status": "CANONICAL",
+   "status": "CANONICAL",
    "note": "openpatala as agent identity surface + runtime spine for translation/formal. (2026-11-14.)",
    "allow_stale": [
     "1034 works",
@@ -256,16 +256,54 @@
     "8/8",
     "479",
     "555",
-     "2 recorded"
-    ]
+    "2 recorded"
+   ]
   },
   "docs/ratie-paper-2026-11-16.md": {
-    "status": "HISTORICAL",
-    "note": "Machine-assembled Ratie paper (CH7 shape, estate-anchored). PARTIAL by construction. (2026-11-16.)"
+   "status": "HISTORICAL",
+   "note": "Machine-assembled Ratie paper (CH7 shape, estate-anchored). PARTIAL by construction. (2026-11-16.)"
   },
   "docs/ratie-chatgpt-brief-2026-11-16.md": {
-    "status": "HISTORICAL",
-    "note": "ChatGPT feedback protocol for the Ratie assembly: 4 asks + boundaries + recording. (2026-11-16.)"
+   "status": "HISTORICAL",
+   "note": "ChatGPT feedback protocol for the Ratie assembly: 4 asks + boundaries + recording. (2026-11-16.)"
+  },
+  "NORTHSTAR-2026-11-17.md": {
+   "status": "CANONICAL",
+   "note": "THE PRODUCT TARGET: owner verbatim 4-turn workflow (work status -> concept card -> occurrences -> essays), acceptance test, 20-item queue. (2026-11-17.)",
+   "allow_stale": [
+    "16/154",
+    "138\\ gaps",
+    "51\\ tools",
+    "155\\ entries",
+    "206\\ theorems",
+    "281\\ results",
+    "909\\ passages",
+    "16/16",
+    "331\\ essayless",
+    "578\\ unargued",
+    "123\\ cruxless",
+    "893\\ formal",
+    "4/4",
+    "6\\ occurrences",
+    "415\\ concepts",
+    "107\\ tests",
+    "57\\ mutants",
+    "132\\ tests",
+    "345\\ concepts",
+    "415\\ concept"
+   ]
+  },
+  "docs/northstar-user-guide.md": {
+   "status": "CANONICAL",
+   "note": "User-facing four-turn guide with captured outputs. (2026-11-17.)",
+   "allow_stale": [
+    "4/4",
+    "16/154",
+    "331\\ essayless",
+    "893\\ formal",
+    "6\\ occurrences",
+    "415\\ concepts"
+   ]
   }
-  }
+ }
 }

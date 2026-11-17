@@ -28,6 +28,7 @@ witness → chunk → layers → formal → arguments → treeka → essay → t
 
 | Doc | What |
 |---|---|
+| [NORTHSTAR-2026-11-17.md](NORTHSTAR-2026-11-17.md) | **THE PRODUCT TARGET** — owner verbatim: work status → concept card → occurrences → essays, one system. Acceptance test + 20-item queue. Read every session. |
 | [docs/00-thesis.md](docs/00-thesis.md) | The goal, the laws, the tiers — why this exists |
 | [docs/10-openpatala.md](docs/10-openpatala.md) | Identity: the scholarly state machine (live: 1034 works) |
 | [docs/20-translation-evidence.md](docs/20-translation-evidence.md) | Evidence: translation layers, Scholar, claims, audit |
