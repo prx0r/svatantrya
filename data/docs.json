@@ -17,14 +17,14 @@
    "note": "Public paper: what this actually is. (2026-11-14.)",
    "allow_stale": [
     "1034\\ works",
-    "107\\ tests",
     "154\\ chunks",
     "154\\ passages",
     "155\\ entries",
     "206\\ theorems",
     "210\\ tools",
     "51\\ tools",
-    "909\\ passages"
+    "909\\ passages",
+    "132\\ tests"
    ]
   },
   "docs/00-thesis.md": {
@@ -50,11 +50,11 @@
    "status": "CANONICAL",
    "note": "Proof pillar. (2026-11-14.)",
    "allow_stale": [
-    "107\\ tests",
     "154\\ chunks",
     "155\\ entries",
     "16/154",
-    "206\\ theorems"
+    "206\\ theorems",
+    "132\\ tests"
    ]
   },
   "docs/40-federation-mcp.md": {
@@ -120,7 +120,6 @@
    "allow_stale": [
     "051\\ works",
     "1034\\ works",
-    "107\\ tests",
     "14\\ tests",
     "14/14",
     "154\\ chunks",
@@ -132,7 +131,8 @@
     "8/8",
     "9/9",
     "909\\ bundles",
-    "909\\ passages"
+    "909\\ passages",
+    "132\\ tests"
    ]
   },
   "docs/70-v1-tracker.md": {
@@ -154,10 +154,10 @@
    "note": "Methodical verification. (2026-11-14.)",
    "allow_stale": [
     "10\\ tools",
-    "107\\ tests",
     "115\\ tools",
     "155\\ entries",
-    "206\\ theorems"
+    "206\\ theorems",
+    "132\\ tests"
    ]
   },
   "docs/90-glossary.md": {
@@ -286,7 +286,6 @@
     "4/4",
     "6\\ occurrences",
     "415\\ concepts",
-    "107\\ tests",
     "57\\ mutants",
     "132\\ tests",
     "345\\ concepts",

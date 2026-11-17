@@ -64,12 +64,12 @@ doctrine — counts, orderings, gatings. Not interpretations; arithmetic.
 | Evidence registry | **206 theorems · 155 entries · 2 exemptions · 1 generated · 0 problems** | `tools/evidence_check.py` |
 | Coverage | **16 of 154 chunks (10%)**, gap list published | same command |
 | Axiom hygiene | **CLEAN** — no `sorry`, no smuggled axioms | `tools/axiom_audit.py --check` |
-| Full test suite | **107 tests OK** | `python3 -m unittest discover -s formal-trika/tests` |
+| Full test suite | **132 tests OK (1 skipped)** | `python3 -m unittest discover -s formal-trika/tests` |
 
 The number that matters most is not 206. It is the twins: every theorem ships
 with a hand-written mutant — a single-definition corruption — that the checker
 is **required to refuse**. If the checker were vacuous, the mutant would
-compile; it does not, 79 times over. That is what "machine-checked" means
+compile; it does not, 57 times over. That is what "machine-checked" means
 here: the instrument bites, and we prove that it bites.
 
 And the number that matters second-most is 10%. Sixteen of 154 passages are

@@ -18,7 +18,7 @@ is the highest-severity finding in this project.
 | Freshness | **SHARP** (provenance: Muktabodha ingest 2026-11-11) | `tools/freshness.py --check` |
 | Catalog | **SHARP, 115 tools / 8 families** | `tools/mcp_catalog.py --check` |
 | Federation pretest | **GREEN (28)** | `tools/federation_pretest.py` |
-| Full suite | **107 tests OK** | `python3 -m unittest discover -s formal-trika/tests` |
+| Full suite | **132 tests OK (1 skipped)** | `python3 -m unittest discover -s formal-trika/tests` |
 | Bridge E2E (HTTP) | **8/8** incl. real evidence + real trace | `tools/bridge_e2e.py` |
 | Layer roundtrip | **9/9** codes↔public names | `tools/layer_names.py` |
 | Essay gate | **14/14 tests; 6 essays, 0 BROKEN** | `essay_check` + `essay_derive.py` |

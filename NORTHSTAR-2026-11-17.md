@@ -194,9 +194,10 @@ witnesses and traces. It does not yet say which *edition* is the base text
 (`editions[0]` exists in the dossier but the status object surfaces counts, not
 the edition title/URI). That is the next real hole, not a cosmetic one.
 
-**Two drift numbers fixed while here:** live coverage now 16/154 (was 17/154
-self-contradictory), and `PAPER.md` still says 79 mutants where the scripts
-define 57 and 107 tests where the suite now runs 132 — not yet edited.
+**Three drift numbers fixed while here:** live coverage now 16/154 (was 17/154
+self-contradictory); `PAPER.md` mutant count corrected to 57 (was inflated to
+79); the suite count corrected to 132 (was stated as 107) in PAPER, 30, 60 and
+80. Historical docs (99) left untouched as snapshots.
 
 ---
 
