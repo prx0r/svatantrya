@@ -18,11 +18,11 @@ off: peer review → teacher → practice consume only gated outputs.
 |---|---|---|
 | Control (`control/run.sh`) | **53 PASS / 0 FAIL** | positives + hand-written must-fail twins |
 | Recognition (`recognition/run.sh`) | **26 passed / 0 failed** | same discipline |
-| EVIDENCE registry | **206 theorems · 155 entries · 2 exemptions · 1 generated · 0 problems** | `tools/evidence_check.py` |
+| EVIDENCE registry | **226 theorems · 175 entries · 2 exemptions · 1 generated · 0 problems** | `tools/evidence_check.py` |
 | Coverage | **16/154 chunks (10%)**, gap list published | same |
 | TABLE readings | **rc=0** | `tools/table.py --check` |
 | Axiom audit | **CLEAN (static)** — no sorry/axiom/native_decide | `tools/axiom_audit.py --check` |
-| Full suite | **107 tests OK** | `python3 -m unittest discover -s formal-trika/tests` |
+| Full suite | **132 tests OK (1 skipped)** | `python3 -m unittest discover -s formal-trika/tests` |
 
 ## The 206 vs 155 story (read this before citing counts)
 

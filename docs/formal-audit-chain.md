@@ -127,7 +127,7 @@ negative controls, so the method itself is tested, not asserted.
 - **Essay compile/gate/derive are not on MCP** — an agent can verify essay claims
   via `formal__trace` but cannot run `essay_derive` remotely. Exposing it would
   need a new svread tool wrapping trika-x's local gate (a lane decision).
-- **Coverage is 17/154 chunks** — proof exists for a fraction; the gap list is
+- **Coverage is 16/154 chunks** — proof exists for a fraction; the gap list is
   published and the queue is worked in order.
 - **Witnesses are 0** — the chain proves identity + structure, never a
   manuscript; source hop says `UNPINNED`.

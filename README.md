@@ -28,10 +28,13 @@ witness → chunk → layers → formal → arguments → treeka → essay → t
 
 | Doc | What |
 |---|---|
+| [THESIS.md](THESIS.md) | **THE SPEARHEAD** — philosophy is for humans; Trika as source not identity; F1–F10 research tracks. Read first. |
+| [NORTHSTAR-2-2026-11-17.md](NORTHSTAR-2-2026-11-17.md) | **OWNER VERBATIM** — the second northstar: bridge to other disciplines, general theory of transformation. Never edit. |
+| [NORTHSTAR-2026-11-17.md](NORTHSTAR-2026-11-17.md) | **THE PRODUCT TARGET** — owner verbatim: work status → concept card → occurrences → essays, one system. Acceptance test + 20-item queue. Read every session. |
 | [docs/00-thesis.md](docs/00-thesis.md) | The goal, the laws, the tiers — why this exists |
 | [docs/10-openpatala.md](docs/10-openpatala.md) | Identity: the scholarly state machine (live: 1034 works) |
 | [docs/20-translation-evidence.md](docs/20-translation-evidence.md) | Evidence: translation layers, Scholar, claims, audit |
-| [docs/30-formal-proofs.md](docs/30-formal-proofs.md) | Proof: Lean spine, what is machine-checked (53+26, 206 theorems) |
+| [docs/30-formal-proofs.md](docs/30-formal-proofs.md) | Proof: Lean spine, what is machine-checked (53+26, 226 theorems) |
 | [docs/40-federation-mcp.md](docs/40-federation-mcp.md) | Access: one MCP federation, ChatGPT plugins, read sheaf |
 | [docs/50-recipes.md](docs/50-recipes.md) | Endgame: diary → teachings → media → journey (R1–R9) |
 | [docs/60-live-state.md](docs/60-live-state.md) | Verified live endpoints, counts, receipts (2026-11-14) |

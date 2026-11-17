@@ -25,3 +25,5 @@ jobs:
         run: python3 tools/recipes_run.py
       - name: Agent recipes selftest (negative controls)
         run: python3 tools/recipes_run.py --selftest
+      - name: NORTHSTAR four-turn acceptance (live public surface)
+        run: python3 tools/northstar_eval.py

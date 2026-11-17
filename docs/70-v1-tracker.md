@@ -15,8 +15,8 @@ is owner switches plus scholarly coverage. No feature creep.*
 - [x] Public instructions speak plain layer names + "machine-checked"
 - [x] ChatGPT acceptance suite T0–T15 passes live 16/16 (trika-x: suite + runner + CI wrapper; PR open)
 - [x] GEO files live: robots.txt allows AI crawlers + names sitemap; 1963-URL sitemap exposes 906 claim pages; claim JSON-LD carries honesty states (BLOCKED/UNPINNED/UNBOUND/UNREVIEWED); llms.txt served
-- [ ] **Per-layer sha256 + review state in `scholar__passage_evidence`** (gap — the one V1 surface gap)
-- [ ] `llms.txt` does not yet point agents at the live MCP endpoint URL (svread emitter lane)
+- [x] **Per-layer sha256 + review state in `scholar__passage_evidence`** — live 2026-11-16 (R2: 7 layers, 7 sha, `UNREVIEWED`)
+- [x] `llms.txt` points agents at live MCP endpoints (public + console URLs live 2026-11-16)
 - [ ] **Google indexing confirmed** (owner: Search Console — no submission portal exists for organic AI citations; crawlable surface is the whole lever)
 
 ### Identity (OpenPāṭala)
@@ -41,10 +41,8 @@ is owner switches plus scholarly coverage. No feature creep.*
 
 ## Repair queue (ordered, no creep)
 
-1. **[agent]** `scholar__passage_evidence`: add per-layer sha256 + review state
-   (svread scholar lane; small, high value for trust).
-2. **[agent]** `llms.txt`: point agents at the live MCP endpoint URL
-   (svread emitter template; one-line-class fix, high GEO value).
+1. **[agent — DONE 2026-11-16]** `scholar__passage_evidence`: per-layer sha256 + review state live (R2 PASS).
+2. **[agent — DONE 2026-11-16]** `llms.txt`: live MCP endpoint URLs present (public + console).
 2. **[owner]** Revoke the leaked GitHub token + MCP bearer; reconnect write app.
 3. **[owner]** Search Console + sitemap submit; confirm indexing.
 4. **[owner]** Credentials rotation; disk reclaim; nightly-green confirmation.

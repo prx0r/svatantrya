@@ -22,7 +22,7 @@ explicitly **not** blocking this step: #19 (D-DSP pilot, awaiting assessor),
 
 | Gate | Result | Command |
 |---|---|---|
-| EVIDENCE registry | **206 theorems · 155 entries · 2 exemptions · 1 generated · 0 problems** | `python3 formal-trika/tools/evidence_check.py` |
+| EVIDENCE registry | **226 theorems · 175 entries · 2 exemptions · 1 generated · 0 problems** | `python3 formal-trika/tools/evidence_check.py` |
 | TABLE readings | **rc=0** | `python3 formal-trika/tools/table.py --check` |
 | Axiom audit | **CLEAN (static)** | `python3 formal-trika/tools/axiom_audit.py --check` |
 | MCP catalog | **SHARP, 115 tools / 8 families** | `python3 tools/mcp_catalog.py --check` |
@@ -30,7 +30,7 @@ explicitly **not** blocking this step: #19 (D-DSP pilot, awaiting assessor),
 | Essay derivation | **6 essays, 0 BROKEN** (all PARTIAL, honestly) | `python3 formal-trika/tools/essay_derive.py` |
 | Lean control | **53 PASS / 0 FAIL** (positives + must-fail twins) | `sh formal-trika/control/run.sh` (Lean 4.34.1) |
 | Lean recognition | **26 passed / 0 failed** | `sh formal-trika/recognition/run.sh` |
-| Full suite | **107 tests OK** | `python3 -m unittest discover -s formal-trika/tests` |
+| Full suite | **132 tests OK (1 skipped)** | `python3 -m unittest discover -s formal-trika/tests` |
 | Freshness | **SHARP on clean main checkout** | `python3 formal-trika/tools/freshness.py --check` |
 
 **Anomaly found and resolved, not hidden:** the first freshness run reported
@@ -87,7 +87,7 @@ one; writes require OAuth that does not exist yet (fail-closed, stated).
 ### Step 1 verdict
 
 **trika-x is real, green, and reachable by agents today** — proven by its own
-gates (53+26 Lean, 107 tests, SHARP ledger) and by two live agent paths
+gates (53+26 Lean, 132 tests, SHARP ledger) and by two live agent paths
 returning real theorems. The one anomaly found (freshness DRIFT) was traced
 to a dirty checkout, re-proven SHARP on clean main, and recorded rather than
 smoothed over.
