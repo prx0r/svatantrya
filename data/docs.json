@@ -303,6 +303,22 @@
     "6\\ occurrences",
     "415\\ concepts"
    ]
+  },
+  "THESIS.md": {
+   "status": "CANONICAL",
+   "note": "The spearhead: philosophy is for humans; Trika as source not identity; F1-F10 tracks. (2026-11-17.)",
+   "allow_stale": [
+    "witnesses: 0",
+    "16/154",
+    "4/4",
+    "core: 0",
+    "frontier: 139",
+    "139\\ frontier"
+   ]
+  },
+  "NORTHSTAR-2-2026-11-17.md": {
+   "status": "CANONICAL",
+   "note": "OWNER VERBATIM: Trika as source, general theory as output, F research tracks. Never edit. (2026-11-17.)"
   }
  }
 }
