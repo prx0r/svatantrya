@@ -64,6 +64,12 @@ honest maximum is.
 | **D. Identity** | the metaphysical identity between two descriptions | **definition only** | consistency + consequences + ruled-out alternatives; never a theorem |
 | **E. Phenomenality** | what it is like; valence | **no** | declared primitive, tier-labelled, never modelled |
 
+Placing these at Marr's levels makes the boundary sharper: layers A–C are
+**computational-level** descriptions (what is computed, not how), layer D is a
+metaphysical identity that no level fully captures, and layer E is not an
+implementation claim at all. Following Yan et al. (2026), a comparison that
+ignores level will manufacture contradictions out of scope differences.
+
 Two rules follow.
 
 **Rule 1.** A formalisation must state which layer each theorem belongs to. A

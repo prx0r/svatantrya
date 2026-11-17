@@ -17,8 +17,9 @@ other theory actually provides, and record a verdict of `fit`, `partial`, or
 `incompatible` — where *incompatible requires naming the precise obstruction*.
 We apply the method to Trika Śaivism as encoded in a machine-checked corpus
 (214 theorems, 159 registry entries, 57 negative-control twins) against ten
-interlocutors. Result: **one methodological fit, three partial mappings, six
-incompatibilities with named obstructions.** We argue the six are the
+interlocutors. Result: **one fit, four partial mappings, four incompatibilities with named
+obstructions, and two cases that are not comparable because they answer a
+different explanatory question.** We argue the six are the
 contribution: they identify exactly where a synthesis would be equivocation, and
 each names the build that would change its verdict. We also report one
 methodological disparity with a sibling formalisation — an axiomatic Advaita
@@ -52,7 +53,17 @@ ones.
 
 ---
 
-## 2. Method
+## 2. Method, and the level discipline
+
+Following the comparative method of Yan et al. (2026, *Biological Cybernetics*),
+every comparison declares the **scope** of the question each side answers. An
+`incompatible` verdict is only legal when both sides answer the *same* question;
+a different question yields `not-comparable`, which must name the difference.
+This matters: two of our original six "incompatibilities" were scope mismatches,
+not contradictions, and were reclassified (HOT, QRI). Every record also names the
+**formal tools** the comparison requires and the **tractability** of both sides —
+ours is `O(n)` enumeration over finite tables, which is a containment advantage,
+not a coverage one.
 
 Every comparison is a record with: the interlocutor's artefact and citation; the
 trika-x anchors (each of which must resolve in the registry or the record is

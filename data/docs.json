@@ -404,6 +404,21 @@
     "57\\ twins",
     "129\\ primitive"
    ]
+  },
+  "docs/imports/BC-2026-formalizing-consciousness.md": {
+   "status": "REFERENCE",
+   "note": "Import of Yan et al. 2026 (Biological Cybernetics): method, five changes to trika-x, PCM discovery. (2026-11-17.)",
+   "allow_stale": [
+    "214\\ theorems",
+    "159\\ entries",
+    "16/154",
+    "4\\ incompatible",
+    "4\\ partial",
+    "2\\ not-comparable",
+    "11/11",
+    "129\\ axioms",
+    "13\\(10\\)"
+   ]
   }
  }
 }
