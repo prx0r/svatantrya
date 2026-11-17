@@ -122,6 +122,118 @@ differences into testable differences in therapeutic emphasis.**
 
 ---
 
+## 4a. Host formalisms: map, don't invent (decision 2026-11-17)
+
+We do **not** derive a new psychological formalism. There are already several
+mature, maths-first frameworks for self, affect and change. Our job is to locate
+Trika's formalised structures inside them, state where they agree, and state
+where they **provably conflict**. That is comparative work, and the conflicts are
+the publishable part.
+
+| Host formalism | Their object | Our anchor | Fit / conflict |
+|---|---|---|---|
+| **Active inference / free-energy** (Friston; Kirchhoff et al. 2018) | self = Markov blanket, a statistical boundary | `Kancuka.lean :: count_5`, `pairings_distinct` | fit: contraction is boundary-formation. conflict: they have one measurable boundary; we have five named capacity-restrictions — either they collapse or our five are real |
+| **Allostasis** (Prueitt, Sezer & Sacchet 2025) | pain = imperative to adapt a boundary, homeostatic or heterostatic | `Avarana.lean :: course_ascends`, `partial_order_honest` | fit: exclusion (apoha) constitutes the boundary. conflict: they say adaptation; we say removal of a covering |
+| **Perceptual Control Theory** (Mansell & Huddy 2020) | psychopathology = chronic unresolved goal conflict; change = awareness enabling reorganisation | `Ladder.lean :: abandon_strict`, `Application.lean :: unready_unreachable` | fit: readiness gate ≈ awareness prerequisite. **conflict: sudden gains vs "no leaps"** |
+| **Process theory / symmetric monoidal category** (arXiv 2511.05580) | types + processes + composition | `Kancuka.lean` (types), `restricts` (process) | fit: our Lean tables *are* a process theory with types and a restricting morphism. This is the strongest methodological home for "type logic" |
+| **Computational learning models** (Berwian et al. 2025) | change = prediction-error-driven update; latent-cause inference | `Recognition.lean :: recognition_adds_nothing` | conflict: if recognition adds no content, it is **not** evidence accumulation — it predicts precision/structure change, not value update |
+| **Nonlinear dynamics / synergetics** (Schiepek et al. 2016) | change as bifurcation in 5 coupled state variables | `MalaFuel.lean :: fuel_terminates`, `grace_ignites` | fit: grace ≈ a non-technical perturbation at a bifurcation. conflict: their model is continuous; our ascent is discrete |
+
+**Three falsifiable conflicts this produces — these are the papers:**
+
+1. **Recognition vs prediction error.** Non-additive reorganisation vs
+   evidence-driven update. Settling condition: a durable change with no new
+   evidence and no value update, or a precision-only manipulation reproducing
+   recognition outcomes.
+2. **No leaps vs sudden gains.** `abandon_strict` forbids discontinuous ascent;
+   the PCT/empirical literature reports sudden durable gains.
+3. **Five contractions vs one boundary.** Either the five named capacities
+   collapse into a single precision parameter, or the Markov-blanket account is
+   under-specified for persons.
+
+**Verified citations (web-checked 2026-11-17; re-verify before submission):**
+
+- Prueitt, C., Sezer, I., Sacchet, M. D. (2025). *Reimagining pain as an
+  allostatic imperative: perspectives from contemplative traditions.*
+  Neuroscience of Consciousness 2025(1): niaf049. DOI `10.1093/nc/niaf049`.
+  — the methodological blueprint: explicit Pratyabhijñā × allostasis bridge,
+  with an explicit disclaimer that the ancients were not allostatic
+  imperativists.
+- Berwian, I. M., Hitchcock, P., Pisupati, S., Schoen, G., Niv, Y. (2025).
+  *Using computational models of learning to advance cognitive behavioral
+  therapy.* Communications Psychology. `s44271-025-00251-4`.
+- Smith, R., Moutoussis, M., Bilek, E. (2021). *Simulating the computational
+  mechanisms of cognitive and behavioral psychotherapeutic interventions:
+  insights from active inference.* PMC8115057.
+- Mansell, W., Huddy, V. (2020). *Why do we need computational models of
+  psychological change and recovery…* Frontiers in Psychiatry.
+  `fpsyt.2020.00624`.
+- Schiepek, G., Aas, B., Viol, K. (2016). *The Mathematics of Psychotherapy:
+  A Nonlinear Model of Change Dynamics.* PubMed 27262423.
+- *Approximating the Mathematical Structure of Psychodynamics* (2025),
+  arXiv:2511.05580 — process theory / symmetric monoidal category.
+- Herbener, A. B., Damholdt, M. F. (2025). *A Theoretical Framework of the
+  Processes of Change in Psychotherapy Delivered by Artificial Agents.*
+  arXiv:2509.02144 — directly relevant to F5.
+- Kirchhoff, M. et al. (2018). *The Markov blankets of life.* J. R. Soc.
+  Interface; Friston (2018) *Am I self-conscious?*; Limanowski & Friston (2018)
+  on precision and phenomenal transparency.
+
+**What this means for the arxiv paper:** the contribution is not a new theory.
+It is **(i) a machine-checked encoding of Trika's structural commitments,
+(ii) a mapping of those commitments into existing formalisms, and (iii) three
+stated conflicts with predictions.** That is a much stronger and much more
+honest paper than "we formalised Trika psychology".
+
+**Encoding:** these are live cross-model tensions in
+`svread/data/xmodel/tensions.json` (`tools/xmodel.py check` → 11/11 pass type
+logic), including `recognition-vs-prediction-error`,
+`no-leaps-vs-sudden-gains`, `contraction-vs-markov-boundary` and
+`covering-vs-allostatic-adaptation`.
+
+---
+
+## 4b. Existing formalisations we can actually compare against (2026-11-17)
+
+There is a small but real literature of **machine-checked Indian philosophy**.
+That changes the paper: we are not the first, and we should say so. Six records
+live in `svread/data/xmodel/comparisons.json`; the engine enforces that an
+"incompatible" verdict names its obstruction and that a "fit" names its basis.
+
+| Comparison | Their method | Verdict | The thing that matters |
+|---|---|---|---|
+| **Advaita Vedānta axiomatisation** (Scherf, Lean 4: 129 axioms, 10 modules) | axiomatic | **partial** | They list *"liberation as recognition"* under **what the formalisation cannot capture**. Trika-x proves it (`recognition_adds_nothing`). Same doctrine, opposite formal treatment |
+| **Cubical Navya-Nyāya** (arXiv:2605.12548) | cubical type theory | **partial** | Same medium, different object: they formalise a *language*, we formalise an *ontology*. They have metatheory (soundness, faithfulness); we have non-vacuity (57 twins) |
+| **Modal Catuṣkoṭi** (Chapman 2026, Lean 4) | modal + paraconsistent | **incompatible** | Obstruction named: `decide` needs decidable classical propositions; the fourth lemma ("neither") is not one. A proof-core difference, not a missing table |
+| **Vaiśeṣika generative ontology** (Tavva & Singh, JOWO 2015) | graph grammar | **partial** | One boundary primitive ("punctuator") vs five typed restrictions (kañcuka). Complementary, neither subsumes the other |
+| **Category theory and śūnyatā** (Roy & Posina 2024) | category theory (analogy) | **incompatible** | Obstruction: **no morphisms**. Yoneda requires a category; trika-x has types and a restricting function but no composition, so the claim cannot even be stated |
+| **Nāgārjuna in Lean 4** (Fujimoto 2026, Zenodo) | Lean + explicit verification boundary | **fit** | Methodological ally: both declare the interpretive layer *outside* the kernel. Licenses the trika-x tier discipline as established practice |
+
+**What the comparison set buys the paper:**
+
+1. **Related work is real, not gestured.** Four independent Lean/type-theoretic
+   formalisations of Indian philosophy now exist; a reviewer will know.
+2. **The strongest single result** is the Advaita disparity: a 129-axiom
+   formalisation declares recognition unformalizable, while a finite-table
+   formalisation proves it. That is a publishable claim about *method*, not
+   about who is right doctrinally.
+3. **Two named incompatibilities** (classical vs paraconsistent; no morphisms
+   for Yoneda) are more valuable than two more "partial" mappings, because a
+   negative result with a named obstruction is checkable.
+4. **The honest weakness is now visible:** trika-x has no soundness or
+   faithfulness theorem. The cubical Nyāya work has both. We must say this in
+   the limitations, and the answer is the twin-mutant non-vacuity argument —
+   which is weaker than soundness and must not be dressed as it.
+
+**Generated essays:** `xmodel-compare-advaita-lean-axiomatic` and
+`xmodel-compare-madhyamaka-modal-catuskoti-lean` are in the trika-x swarm as
+complete triples, both `READY_FOR_HUMAN_REVIEW` (9/9 essays pass the gate).
+The essays are not written by hand: sections and claims are derived
+one-to-one from the comparison record, and a change to the record invalidates
+the receipt.
+
+---
+
 ## 5. The one formal claim with real psychological teeth
 
 `Recognition.lean :: recognition_adds_nothing` + `recognition_preserves_content`
@@ -208,6 +320,8 @@ track may promote itself.
 | **F8** | **Practical Vedānta correction**: every recognition claim must cash out in conduct toward others | philosophical + practical | a recognition account that cannot state any change in conduct |
 | **F9** | **Worldview navigation**: helping a person hold their own view while living among incompatible ones | practical | it produces relativism (no commitments) or dogmatism (no tolerance) |
 | **F10** | **AI as research instrument, audited**: every step in the chain labelled, no step promoted | engineering + meta | any output where a DERIVED trace is presented as scholarship |
+| **F11** | **Host-formalism mapping** (§4a): place each Trika structure inside active inference, allostasis, PCT, process theory, learning models, synergetics | formal + comparative | a mapping that needs the Trika term to mean something different on each side |
+| **F12** | **The conflicts paper**: recognition vs prediction error, no-leaps vs sudden gains, five contractions vs one boundary | theory + empirical design | a conflict that turns out to be verbal, not formal |
 
 **Sequencing:** F1 and F2 are writable now with what exists. F3 and F4 are
 writable as pre-registered theory papers. F5 needs ethics and partners. F6/F7
