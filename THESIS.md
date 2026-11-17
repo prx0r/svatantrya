@@ -203,7 +203,7 @@ live in `svread/data/xmodel/comparisons.json`; the engine enforces that an
 | Comparison | Their method | Verdict | The thing that matters |
 |---|---|---|---|
 | **Advaita Vedānta axiomatisation** (Scherf, Lean 4: 129 axioms, 10 modules) | axiomatic | **partial** | They list *"liberation as recognition"* under **what the formalisation cannot capture**. Trika-x proves it (`recognition_adds_nothing`). Same doctrine, opposite formal treatment |
-| **Cubical Navya-Nyāya** (arXiv:2605.12548) | cubical type theory | **partial** | Same medium, different object: they formalise a *language*, we formalise an *ontology*. They have metatheory (soundness, faithfulness); we have non-vacuity (60 twins) |
+| **Cubical Navya-Nyāya** (arXiv:2605.12548) | cubical type theory | **partial** | Same medium, different object: they formalise a *language*, we formalise an *ontology*. They have metatheory (soundness, faithfulness); we have non-vacuity (62 twins) |
 | **Modal Catuṣkoṭi** (Chapman 2026, Lean 4) | modal + paraconsistent | **incompatible** | Obstruction named: `decide` needs decidable classical propositions; the fourth lemma ("neither") is not one. A proof-core difference, not a missing table |
 | **Vaiśeṣika generative ontology** (Tavva & Singh, JOWO 2015) | graph grammar | **partial** | One boundary primitive ("punctuator") vs five typed restrictions (kañcuka). Complementary, neither subsumes the other |
 | **Category theory and śūnyatā** (Roy & Posina 2024) | category theory (analogy) | **incompatible** | Obstruction: **no morphisms**. Yoneda requires a category; trika-x has types and a restricting function but no composition, so the claim cannot even be stated |

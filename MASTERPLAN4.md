@@ -52,7 +52,7 @@ insiders; the current one is checkable by a stranger.
 PILLAR 1 — SURFACE            PILLAR 2 — EVIDENCE             PILLAR 3 — COMPARISON
 one system, 4 turns           layers T1→L4, traces,           xmodel tensions + comparisons
 openpatala + scholar +        trail, EVIDENCE registry        verdicts: fit/partial/incompatible
-formal + treeka               (214 thm / 161 entries)         essays generated structurally
+formal + treeka               (214 thm / 165 entries)         essays generated structurally
         │                             │                                │
         └──────── ids ────────────────┴─────────── anchors ────────────┘
                      everything resolves through the same ID grammar
@@ -109,7 +109,7 @@ twin each, registered as `MODEL` entries.
 ### W4 — State the soundness position *(AGENT, small, honest)*
 Why: the cubical Navya-Nyāya formalisation has soundness and faithfulness; we
 have non-vacuity. A reviewer will ask. Done when: a one-page note in trika-x
-states exactly what is and is not claimed, citing the 60 twins, and P1/P2
+states exactly what is and is not claimed, citing the 62 twins, and P1/P2
 limitations link it.
 
 ### W5 — Paper 1 to submission shape *(AGENT, then OWNER sign-off)*

@@ -19,9 +19,12 @@ but cannot be proved; E is a declared primitive. We work the method on *aperture
 inexternalism*, an identity theory in which one concrete process is described
 extrinsically as an embodied aperture and intrinsically as a valenced phenomenal
 field. In Lean 4 we encode the two positionings, the recognition operation, and
-the mode-of-access switch; six theorems are machine-checked, and a hand-written
-twin — a one-definition corruption that alters content during the mode switch —
-is *required to be refuted* by the checker. We prove content preservation,
+the mode-of-access switch; twelve theorems are machine-checked in the core file
+(a positioning inventory, content preservation, involution, mode-switch
+invariance, two exclusion constraints), plus a Z/2 action layer proving the flip
+is the generator of exactly the symmetry group this structure admits, plus a
+cut result with no cross-block flow. Each has a hand-written twin that a named
+proposition must refute. We prove content preservation,
 involution, and non-fixed-point; we do **not** prove the identity, and no theorem
 is named for it. We argue that this is the correct formal treatment of an
 identity theory, and that the discipline transfers to any theory with a
@@ -135,7 +138,7 @@ def recognise (f : Field) : Field :=
                      | .primary => .instrument) }
 ```
 
-Ten theorems (six operation + two invariance + two exclusion):
+Twelve theorems in the core file (six operation, two invariance, two exclusion, two positioning inventory) plus a Z/2 action layer (eight theorems: group laws, action laws, content invariance, generator agreement, involution from the group law) and a cut result (no cross-block flow):
 
 | Theorem | Statement | Method |
 |---|---|---|
@@ -270,13 +273,14 @@ require a single new theorem about consciousness.
 > definition with consequences, never a theorem; phenomenality is a declared
 > primitive. We work the method on aperture inexternalism — the claim that one
 > phenomenal field is numerically identical with one objectively individuated
-> aperture process — encoded in Lean 4. Ten theorems are machine-checked:
-> content preservation under re-positioning, involution of the recognition
-> operation, content invariance across modes of access, and two exclusion
-> constraints (no production; one process under redescription). No theorem is
+> aperture process — encoded in Lean 4. The core file carries ten theorems
+> (content preservation, involution, mode-switch invariance, two exclusions);
+> a second file proves the flip is the generator of exactly Z/2 and derives
+> involution from the group law; a third proves recognition dynamics carry no
+> cross-block flow (the Phi = 0 case, without a Phi definition). No theorem is
 > named for the identity. A hand-written twin corrupts the mode switch so it alters
 > content, and the checker is required to refute a named proposition; it does.
-> Non-vacuity, not soundness, is the claim — 60 such twins, weaker than
+> Non-vacuity, not soundness, is the claim — 62 such twins, weaker than
 > metatheory and presented as such. The method transfers to any theory with a
 > metaphysical identity at its core: list the inventory, state the operation,
 > encode the exclusions, define the identity, declare the primitive, and write

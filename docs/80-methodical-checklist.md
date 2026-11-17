@@ -22,7 +22,7 @@ explicitly **not** blocking this step: #19 (D-DSP pilot, awaiting assessor),
 
 | Gate | Result | Command |
 |---|---|---|
-| EVIDENCE registry | **216 theorems · 161 entries · 2 exemptions · 1 generated · 0 problems** | `python3 formal-trika/tools/evidence_check.py` |
+| EVIDENCE registry | **225 theorems · 165 entries · 2 exemptions · 1 generated · 0 problems** | `python3 formal-trika/tools/evidence_check.py` |
 | TABLE readings | **rc=0** | `python3 formal-trika/tools/table.py --check` |
 | Axiom audit | **CLEAN (static)** | `python3 formal-trika/tools/axiom_audit.py --check` |
 | MCP catalog | **SHARP, 115 tools / 8 families** | `python3 tools/mcp_catalog.py --check` |

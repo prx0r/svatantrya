@@ -90,7 +90,7 @@ the checker to refute `mode_switch_preserves_content`. Control gate: **PASS**.
 
 | Quantity | Before session | After | Command |
 |---|---|---|---|
-| EVIDENCE | 206 thm · 161 entries | **214 · 159** | `formal-trika/tools/evidence_check.py` |
+| EVIDENCE | 206 thm · 165 entries | **214 · 159** | `formal-trika/tools/evidence_check.py` |
 | MCP catalog | 115 tools | **118** | `tools/mcp_catalog.py --check` |
 | Full suite | 138 (1 skip) | **138 (1 skip)** | `unittest discover -s formal-trika/tests` |
 | Twins | 57 | **58** | count `must_fail` pairs |
