@@ -135,7 +135,7 @@ def recognise (f : Field) : Field :=
                      | .primary => .instrument) }
 ```
 
-Six theorems:
+Ten theorems (six operation + two invariance + two exclusion):
 
 | Theorem | Statement | Method |
 |---|---|---|
@@ -145,6 +145,8 @@ Six theorems:
 | `recognise_changes_positioning` | σ changes (not the identity) | case split |
 | `recognise_involution` | recognising twice returns the field | `rfl` |
 | `mode_switch_preserves_content` | the two modes of access carry the same content | `decide` |
+| `sample_no_production` | no transition in the model produces a state (exclusion C1) | `decide` |
+| `sample_one_process` | extrinsic redescription is the identity on every field (exclusion C2) | `decide` |
 
 The last one is the formalisable heart of the identity theory: the claim that
 switching mode of access changes *nothing* about the process, only how it is
@@ -243,6 +245,46 @@ exclusions — not the identity. Naming that boundary in the artefact, and writi
 a twin that forces the checker to bite, converts a metaphysical essay into
 something a sceptic can inspect. That is the whole contribution, and it does not
 require a single new theorem about consciousness.
+
+---
+
+## Submission shape (proposal, not a submission)
+
+**Target, in order:**
+
+1. ***Neuroscience of Consciousness* (Oxford, open access).** Publishes formal
+   + philosophical work (e.g. the Prueitt et al. bridge paper this method
+   follows), accepts negative and methodological results, and reaches the
+   consciousness-science audience the comparison programme needs.
+2. ***Journal of Consciousness Studies*.** More theoretical, weaker on formal
+   apparatus; a fallback if reviewers want the philosophy without the Lean.
+3. ***Synthese*.** Strong for the formal method, weaker for the
+   consciousness-studies readership. Third choice.
+
+**Abstract (198 words, draft).**
+
+> Formal theories of consciousness are rarely checked against anything. We
+> propose a five-layer decomposition that makes the checkable part of an
+> identity theory explicit: inventory, operation, exclusion, identity,
+> phenomenality. Only the first three are formalisable; the identity is a
+> definition with consequences, never a theorem; phenomenality is a declared
+> primitive. We work the method on aperture inexternalism — the claim that one
+> phenomenal field is numerically identical with one objectively individuated
+> aperture process — encoded in Lean 4. Ten theorems are machine-checked:
+> content preservation under re-positioning, involution of the recognition
+> operation, content invariance across modes of access, and two exclusion
+> constraints (no production; one process under redescription). No theorem is
+> named for the identity. A hand-written twin corrupts the mode switch so it alters
+> content, and the checker is required to refute a named proposition; it does.
+> Non-vacuity, not soundness, is the claim — 60 such twins, weaker than
+> metatheory and presented as such. The method transfers to any theory with a
+> metaphysical identity at its core: list the inventory, state the operation,
+> encode the exclusions, define the identity, declare the primitive, and write
+> the twin that would catch a vacuous formalisation.
+
+**What the paper needs before submission:** a venue decision by the owner, a
+named human signature on the identity-limitation paragraph, and a re-read of
+the full Yan et al. (2026) article once accessible.
 
 ---
 

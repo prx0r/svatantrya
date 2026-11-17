@@ -1,7 +1,7 @@
 {
  "format": "svatantrya.northstar-eval/1",
  "northstar": "NORTHSTAR-2026-11-17.md",
- "checked_at": "2026-11-17T05:57:32Z",
+ "checked_at": "2026-11-17T06:05:59Z",
  "endpoint": "https://mcp.svatantrya.net/mcp",
  "work": "tantrasara-a08",
  "concept": "kancuka",
@@ -19,9 +19,10 @@
     "rights": "NULL",
     "traces": {
      "COMPLETE": 4
-    }
+    },
+    "base_edition": "gretil_tantrasara_clean.txt (Nirnaya Sagara 1918, GRETIL)"
    },
-   "seconds": 1.35
+   "seconds": 1.37
   },
   "T2_concept": {
    "pass": true,
@@ -36,7 +37,7 @@
      "Kancuka.lean :: pairings_distinct"
     ]
    },
-   "seconds": 0.23
+   "seconds": 0.24
   },
   "T3_occurrences": {
    "pass": true,
@@ -79,7 +80,7 @@
      "no_formal_reference": 893
     }
    },
-   "seconds": 1.55
+   "seconds": 1.61
   }
  },
  "verdict": "OPERATIONAL"

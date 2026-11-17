@@ -61,7 +61,7 @@ doctrine — counts, orderings, gatings. Not interpretations; arithmetic.
 |---|---|---|
 | Lean control models | **53 PASS / 0 FAIL** | `sh formal-trika/control/run.sh` |
 | Lean recognition models | **26 passed / 0 failed** | `sh formal-trika/recognition/run.sh` |
-| Evidence registry | **214 theorems · 159 entries · 2 exemptions · 1 generated · 0 problems** | `tools/evidence_check.py` |
+| Evidence registry | **216 theorems · 161 entries · 2 exemptions · 1 generated · 0 problems** | `tools/evidence_check.py` |
 | Coverage | **16 of 154 chunks (10%)**, gap list published | same command |
 | Axiom hygiene | **CLEAN** — no `sorry`, no smuggled axioms | `tools/axiom_audit.py --check` |
 | Full test suite | **132 tests OK (1 skipped)** | `python3 -m unittest discover -s formal-trika/tests` |

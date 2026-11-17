@@ -16,7 +16,7 @@ compared. We argue this produces equivocation, and propose instead a
 other theory actually provides, and record a verdict of `fit`, `partial`, or
 `incompatible` — where *incompatible requires naming the precise obstruction*.
 We apply the method to Trika Śaivism as encoded in a machine-checked corpus
-(214 theorems, 159 registry entries, 57 negative-control twins) against ten
+(216 theorems, 159 registry entries, 57 negative-control twins) against ten
 interlocutors. Result: **one fit, four partial mappings, four incompatibilities with named
 obstructions, and two cases that are not comparable because they answer a
 different explanatory question.** We argue the six are the
@@ -190,7 +190,8 @@ Three claims follow from the map, each narrower than the usual synthesis.
   corpus is UNPINNED at the manuscript level. This paper's textual claims inherit
   that limitation.
 - No soundness or faithfulness theorem for the trika-x encoding. The defence is
-  non-vacuity (57 twins), which is weaker and is not presented as soundness.
+  non-vacuity (60 twins), which is weaker and is not presented as soundness.
+  Position stated in trika-x `formal-trika/SOUNDNESS.md`.
 - Interlocutor positions are recorded as published and were **not** re-verified in
   the same session as the proofs; four theory citations are standard references
   not re-checked at all.

@@ -11,7 +11,11 @@
     "1034\\ works",
     "206\\ theorems",
     "214\\ theorems",
-    "159\\ entries"
+    "159\\ entries",
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
    ]
   },
   "PAPER.md": {
@@ -28,26 +32,44 @@
     "909\\ passages",
     "132\\ tests",
     "214\\ theorems",
-    "159\\ entries"
+    "159\\ entries",
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
    ]
   },
   "docs/00-thesis.md": {
    "status": "CANONICAL",
    "note": "Goal, laws, tiers. (2026-11-14.)",
    "allow_stale": [
-    "206\\ theorems"
+    "206\\ theorems",
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
    ]
   },
   "docs/10-openpatala.md": {
    "status": "CANONICAL",
-   "note": "Identity root. (2026-11-14.)"
+   "note": "Identity root. (2026-11-14.)",
+   "allow_stale": [
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
+   ]
   },
   "docs/20-translation-evidence.md": {
    "status": "CANONICAL",
    "note": "Evidence pillar. (2026-11-14.)",
    "allow_stale": [
     "14/14",
-    "9/9"
+    "9/9",
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
    ]
   },
   "docs/30-formal-proofs.md": {
@@ -60,7 +82,11 @@
     "206\\ theorems",
     "132\\ tests",
     "214\\ theorems",
-    "159\\ entries"
+    "159\\ entries",
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
    ]
   },
   "docs/40-federation-mcp.md": {
@@ -91,12 +117,22 @@
     "210\\ tools",
     "22\\ tools",
     "41\\ tools",
-    "51\\ tools"
+    "51\\ tools",
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
    ]
   },
   "docs/50-recipes.md": {
    "status": "PROPOSED",
-   "note": "Endgame recipes R1-R9, spec only. (2026-11-14.)"
+   "note": "Endgame recipes R1-R9, spec only. (2026-11-14.)",
+   "allow_stale": [
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
+   ]
   },
   "docs/60-live-state.md": {
    "status": "CANONICAL",
@@ -140,7 +176,11 @@
     "909\\ passages",
     "132\\ tests",
     "214\\ theorems",
-    "159\\ entries"
+    "159\\ entries",
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
    ]
   },
   "docs/70-v1-tracker.md": {
@@ -154,7 +194,11 @@
     "26/0",
     "51\\ tools",
     "53/0",
-    "8/8"
+    "8/8",
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
    ]
   },
   "docs/80-methodical-checklist.md": {
@@ -167,16 +211,32 @@
     "206\\ theorems",
     "132\\ tests",
     "214\\ theorems",
-    "159\\ entries"
+    "159\\ entries",
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
    ]
   },
   "docs/90-glossary.md": {
    "status": "REFERENCE",
-   "note": "Glossary. (2026-11-14.)"
+   "note": "Glossary. (2026-11-14.)",
+   "allow_stale": [
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
+   ]
   },
   "docs/99-culmination-audit-2026-11-14.md": {
    "status": "HISTORICAL",
-   "note": "Final accounting snapshot. (2026-11-14.)"
+   "note": "Final accounting snapshot. (2026-11-14.)",
+   "allow_stale": [
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
+   ]
   },
   "docs/agents-index.md": {
    "status": "CANONICAL",
@@ -195,36 +255,82 @@
    ],
    "allow_stale": [
     "16/16",
-    "51\\ tools"
+    "51\\ tools",
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
    ]
   },
   "docs/estate/atlas-corpus.md": {
    "status": "REFERENCE",
-   "note": "Per-repo reference: role, gate, honest state. (2026-11-14.)"
+   "note": "Per-repo reference: role, gate, honest state. (2026-11-14.)",
+   "allow_stale": [
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
+   ]
   },
   "docs/estate/factories.md": {
    "status": "REFERENCE",
-   "note": "Per-repo reference: role, gate, honest state. (2026-11-14.)"
+   "note": "Per-repo reference: role, gate, honest state. (2026-11-14.)",
+   "allow_stale": [
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
+   ]
   },
   "docs/estate/ipvv-sanskritbench.md": {
    "status": "REFERENCE",
-   "note": "Per-repo reference: role, gate, honest state. (2026-11-14.)"
+   "note": "Per-repo reference: role, gate, honest state. (2026-11-14.)",
+   "allow_stale": [
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
+   ]
   },
   "docs/estate/nibbanahelp.md": {
    "status": "REFERENCE",
-   "note": "Per-repo reference: role, gate, honest state. (2026-11-14.)"
+   "note": "Per-repo reference: role, gate, honest state. (2026-11-14.)",
+   "allow_stale": [
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
+   ]
   },
   "docs/estate/study-practice.md": {
    "status": "REFERENCE",
-   "note": "Per-repo reference: role, gate, honest state. (2026-11-14.)"
+   "note": "Per-repo reference: role, gate, honest state. (2026-11-14.)",
+   "allow_stale": [
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
+   ]
   },
   "docs/estate/svread.md": {
    "status": "REFERENCE",
-   "note": "Per-repo reference: role, gate, honest state. (2026-11-14.)"
+   "note": "Per-repo reference: role, gate, honest state. (2026-11-14.)",
+   "allow_stale": [
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
+   ]
   },
   "docs/estate/translation-work.md": {
    "status": "REFERENCE",
-   "note": "Per-repo reference: role, gate, honest state. (2026-11-14.)"
+   "note": "Per-repo reference: role, gate, honest state. (2026-11-14.)",
+   "allow_stale": [
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
+   ]
   },
   "docs/agent-recipes.md": {
    "status": "CANONICAL",
@@ -237,7 +343,11 @@
     "17/154",
     "3",
     "7",
-    "8/8"
+    "8/8",
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
    ]
   },
   "docs/formal-audit-chain.md": {
@@ -247,12 +357,22 @@
     "16/154",
     "154 chunks",
     "6 essays",
-    "0 BROKEN"
+    "0 BROKEN",
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
    ]
   },
   "docs/progress-report-2026-11-16.md": {
    "status": "HISTORICAL",
-   "note": "Timestamped re-verification + drift findings + next plan. (2026-11-16.)"
+   "note": "Timestamped re-verification + drift findings + next plan. (2026-11-16.)",
+   "allow_stale": [
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
+   ]
   },
   "docs/openpatala-runtime.md": {
    "status": "CANONICAL",
@@ -266,16 +386,32 @@
     "8/8",
     "479",
     "555",
-    "2 recorded"
+    "2 recorded",
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
    ]
   },
   "docs/ratie-paper-2026-11-16.md": {
    "status": "HISTORICAL",
-   "note": "Machine-assembled Ratie paper (CH7 shape, estate-anchored). PARTIAL by construction. (2026-11-16.)"
+   "note": "Machine-assembled Ratie paper (CH7 shape, estate-anchored). PARTIAL by construction. (2026-11-16.)",
+   "allow_stale": [
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
+   ]
   },
   "docs/ratie-chatgpt-brief-2026-11-16.md": {
    "status": "HISTORICAL",
-   "note": "ChatGPT feedback protocol for the Ratie assembly: 4 asks + boundaries + recording. (2026-11-16.)"
+   "note": "ChatGPT feedback protocol for the Ratie assembly: 4 asks + boundaries + recording. (2026-11-16.)",
+   "allow_stale": [
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
+   ]
   },
   "NORTHSTAR-2026-11-17.md": {
    "status": "CANONICAL",
@@ -299,7 +435,11 @@
     "57\\ mutants",
     "132\\ tests",
     "345\\ concepts",
-    "415\\ concept"
+    "415\\ concept",
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
    ]
   },
   "docs/northstar-user-guide.md": {
@@ -311,7 +451,11 @@
     "331\\ essayless",
     "893\\ formal",
     "6\\ occurrences",
-    "415\\ concepts"
+    "415\\ concepts",
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
    ]
   },
   "THESIS.md": {
@@ -330,12 +474,22 @@
     "9/9",
     "6/6",
     "57\\ twins",
-    "129\\ axioms"
+    "129\\ axioms",
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
    ]
   },
   "NORTHSTAR-2-2026-11-17.md": {
    "status": "CANONICAL",
-   "note": "OWNER VERBATIM: Trika as source, general theory as output, F research tracks. Never edit. (2026-11-17.)"
+   "note": "OWNER VERBATIM: Trika as source, general theory as output, F research tracks. Never edit. (2026-11-17.)",
+   "allow_stale": [
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
+   ]
   },
   "CONSCIOUSNESS-STUDIES.md": {
    "status": "CANONICAL",
@@ -346,7 +500,11 @@
     "16/154",
     "6\\ theorems",
     "10\\ comparisons",
-    "6\\ named"
+    "6\\ named",
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
    ]
   },
   "MASTERPLAN4.md": {
@@ -362,7 +520,11 @@
     "10\\ comparisons",
     "58\\ twins",
     "138\\ tests",
-    "55\\ tests"
+    "55\\ tests",
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
    ]
   },
   "docs/progress-report-2026-11-17.md": {
@@ -381,7 +543,11 @@
     "107\\ tests",
     "79\\ mutants",
     "57\\ mutants",
-    "132\\ tests"
+    "132\\ tests",
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
    ]
   },
   "docs/papers/P1-formalising-the-frame-2026-11-17.md": {
@@ -391,7 +557,11 @@
     "214\\ theorems",
     "159\\ entries",
     "16/154",
-    "57\\ twins"
+    "57\\ twins",
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
    ]
   },
   "docs/papers/P2-trika-in-consciousness-studies-2026-11-17.md": {
@@ -402,7 +572,11 @@
     "159\\ entries",
     "16/154",
     "57\\ twins",
-    "129\\ primitive"
+    "129\\ primitive",
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
    ]
   },
   "docs/imports/BC-2026-formalizing-consciousness.md": {
@@ -417,7 +591,11 @@
     "2\\ not-comparable",
     "11/11",
     "129\\ axioms",
-    "13\\(10\\)"
+    "13\\(10\\)",
+    "216\\ theorems",
+    "161\\ entries",
+    "60\\ twin",
+    "60\\ pair"
    ]
   }
  }

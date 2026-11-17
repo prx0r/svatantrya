@@ -90,13 +90,20 @@ def main() -> int:
           "T1: witness state missing", f1)
     check(status.get("review_state") == "UNREVIEWED" or
           bool(status.get("review_state")), "T1: review state missing", f1)
+    base = status.get("base_edition") or {}
+    check(base.get("state") in ("NAMED", "UNNAMED", "NONE"),
+          "T1: base edition state missing", f1)
+    if base.get("state") in ("NAMED", "UNNAMED"):
+        check(bool(base.get("edition_note") or base.get("title")),
+              "T1: base edition has no name at all", f1)
     turns["T1_work_status"] = {"pass": not f1, "failed_checks": f1,
                                "observed": {"work": status.get("work_id"),
                                             "coverage": formal.get("coverage"),
                                             "witnesses": wit.get("count"),
                                             "witness_state": wit.get("state"),
                                             "rights": (status.get("rights") or {}).get("state"),
-                                            "traces": (status.get("traces") or {}).get("verdicts")},
+                                            "traces": (status.get("traces") or {}).get("verdicts"),
+                                            "base_edition": (status.get("base_edition") or {}).get("edition_note")},
                                "seconds": round(time.time() - t0, 2)}
 
     # --- T2 -----------------------------------------------------------------
