@@ -1,7 +1,7 @@
 {
  "format": "svatantrya.northstar-eval/1",
  "northstar": "NORTHSTAR-2026-11-17.md",
- "checked_at": "2026-11-17T05:27:19Z",
+ "checked_at": "2026-11-17T05:57:32Z",
  "endpoint": "https://mcp.svatantrya.net/mcp",
  "work": "tantrasara-a08",
  "concept": "kancuka",
@@ -21,7 +21,7 @@
      "COMPLETE": 4
     }
    },
-   "seconds": 1.64
+   "seconds": 1.35
   },
   "T2_concept": {
    "pass": true,
@@ -36,7 +36,7 @@
      "Kancuka.lean :: pairings_distinct"
     ]
    },
-   "seconds": 0.28
+   "seconds": 0.23
   },
   "T3_occurrences": {
    "pass": true,

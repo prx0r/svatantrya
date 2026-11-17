@@ -348,6 +348,62 @@
     "10\\ comparisons",
     "6\\ named"
    ]
+  },
+  "MASTERPLAN4.md": {
+   "status": "CANONICAL",
+   "note": "Plan of record: comparative formalisation phase, W1-W10, evolving conception. (2026-11-17.)",
+   "allow_stale": [
+    "214\\ theorems",
+    "159\\ entries",
+    "16/154",
+    "4/4",
+    "415\\ concepts",
+    "11\\ tensions",
+    "10\\ comparisons",
+    "58\\ twins",
+    "138\\ tests",
+    "55\\ tests"
+   ]
+  },
+  "docs/progress-report-2026-11-17.md": {
+   "status": "HISTORICAL",
+   "note": "Session record 2026-11-17: builds, numbers, six findings, what is owed. (2026-11-17.)",
+   "allow_stale": [
+    "214\\ thm",
+    "159\\ entries",
+    "16/154",
+    "4/4",
+    "415\\ concepts",
+    "11\\ cross",
+    "10\\ comparisons",
+    "58\\ twins",
+    "138\\ tests",
+    "107\\ tests",
+    "79\\ mutants",
+    "57\\ mutants",
+    "132\\ tests"
+   ]
+  },
+  "docs/papers/P1-formalising-the-frame-2026-11-17.md": {
+   "status": "DRAFT",
+   "note": "Method paper draft: five-layer formalisation of identity theories. (2026-11-17.)",
+   "allow_stale": [
+    "214\\ theorems",
+    "159\\ entries",
+    "16/154",
+    "57\\ twins"
+   ]
+  },
+  "docs/papers/P2-trika-in-consciousness-studies-2026-11-17.md": {
+   "status": "DRAFT",
+   "note": "Comparison paper draft: 10 comparators, 6 named obstructions. (2026-11-17.)",
+   "allow_stale": [
+    "214\\ theorems",
+    "159\\ entries",
+    "16/154",
+    "57\\ twins",
+    "129\\ primitive"
+   ]
   }
  }
 }
