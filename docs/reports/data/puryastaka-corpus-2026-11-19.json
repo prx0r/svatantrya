@@ -1,0 +1,678 @@
+{
+ "format": "svatantrya/subtle-body-corpus/1",
+ "date": "2026-11-19",
+ "note": "Sanskrit-term counts and every puryaṣṭaka chunk. Counts are surface matches in passages.jsonl, not readings.",
+ "terms": [
+  "puryastaka",
+  "prana",
+  "tanmatra",
+  "indriya",
+  "antahkarana",
+  "ahamkara",
+  "manas",
+  "buddhi",
+  "kancuka",
+  "deha_sarira",
+  "linga_suksma",
+  "kosa",
+  "ahamta",
+  "vayu"
+ ],
+ "works": [
+  {
+   "work": "gitarthasangraha",
+   "chunks": 19,
+   "terms": {
+    "puryastaka": 1,
+    "prana": 7,
+    "indriya": 19,
+    "antahkarana": 3,
+    "ahamkara": 5,
+    "buddhi": 52,
+    "kancuka": 1,
+    "deha_sarira": 39,
+    "linga_suksma": 7,
+    "vayu": 6
+   }
+  },
+  {
+   "work": "ipvv",
+   "chunks": 49,
+   "terms": {
+    "puryastaka": 56,
+    "prana": 160,
+    "tanmatra": 27,
+    "indriya": 111,
+    "antahkarana": 37,
+    "ahamkara": 22,
+    "buddhi": 175,
+    "kancuka": 11,
+    "deha_sarira": 209,
+    "linga_suksma": 85,
+    "kosa": 2,
+    "ahamta": 114,
+    "vayu": 18
+   }
+  },
+  {
+   "work": "kularnavatantra",
+   "chunks": 83,
+   "terms": {
+    "prana": 6,
+    "indriya": 2,
+    "buddhi": 1,
+    "kancuka": 1,
+    "deha_sarira": 14,
+    "linga_suksma": 8,
+    "ahamta": 1,
+    "vayu": 2
+   }
+  },
+  {
+   "work": "malinivijayavarttika",
+   "chunks": 10,
+   "terms": {
+    "puryastaka": 1,
+    "prana": 11,
+    "tanmatra": 3,
+    "indriya": 6,
+    "ahamkara": 1,
+    "manas": 2,
+    "buddhi": 6,
+    "kancuka": 4,
+    "deha_sarira": 22,
+    "linga_suksma": 16,
+    "vayu": 1
+   }
+  },
+  {
+   "work": "sivasutravimarsini",
+   "chunks": 3,
+   "terms": {
+    "puryastaka": 16,
+    "prana": 61,
+    "tanmatra": 6,
+    "indriya": 5,
+    "antahkarana": 2,
+    "ahamkara": 4,
+    "buddhi": 18,
+    "kancuka": 11,
+    "deha_sarira": 60,
+    "linga_suksma": 20,
+    "kosa": 3,
+    "ahamta": 8,
+    "vayu": 5
+   }
+  },
+  {
+   "work": "spanda",
+   "chunks": 7,
+   "terms": {
+    "puryastaka": 1,
+    "tanmatra": 1
+   }
+  },
+  {
+   "work": "tantraloka-a05",
+   "chunks": 16,
+   "terms": {
+    "prana": 7,
+    "buddhi": 3,
+    "deha_sarira": 5,
+    "linga_suksma": 9,
+    "ahamta": 1
+   }
+  },
+  {
+   "work": "tantraloka-a06",
+   "chunks": 26,
+   "terms": {
+    "prana": 36,
+    "antahkarana": 1,
+    "buddhi": 2,
+    "kancuka": 2,
+    "deha_sarira": 4,
+    "linga_suksma": 9,
+    "vayu": 1
+   }
+  },
+  {
+   "work": "tantraloka-a07",
+   "chunks": 8,
+   "terms": {
+    "prana": 11,
+    "deha_sarira": 1,
+    "linga_suksma": 5
+   }
+  },
+  {
+   "work": "tantraloka-a08",
+   "chunks": 46,
+   "terms": {
+    "puryastaka": 1,
+    "prana": 3,
+    "tanmatra": 7,
+    "ahamkara": 1,
+    "buddhi": 7,
+    "kancuka": 1,
+    "deha_sarira": 3,
+    "linga_suksma": 9,
+    "vayu": 6
+   }
+  },
+  {
+   "work": "tantraloka-a09",
+   "chunks": 32,
+   "terms": {
+    "puryastaka": 1,
+    "prana": 1,
+    "tanmatra": 8,
+    "indriya": 1,
+    "ahamkara": 6,
+    "buddhi": 7,
+    "kancuka": 3,
+    "deha_sarira": 5,
+    "linga_suksma": 3,
+    "ahamta": 1,
+    "vayu": 3
+   }
+  },
+  {
+   "work": "tantraloka-a10",
+   "chunks": 31,
+   "terms": {
+    "prana": 6,
+    "kancuka": 10,
+    "deha_sarira": 1,
+    "linga_suksma": 3,
+    "kosa": 1,
+    "vayu": 2
+   }
+  },
+  {
+   "work": "tantraloka-a15",
+   "chunks": 62,
+   "terms": {
+    "puryastaka": 2,
+    "prana": 13,
+    "kancuka": 1,
+    "deha_sarira": 19,
+    "linga_suksma": 7,
+    "ahamta": 1
+   }
+  },
+  {
+   "work": "tantraloka-a16",
+   "chunks": 32,
+   "terms": {
+    "prana": 9,
+    "deha_sarira": 7
+   }
+  },
+  {
+   "work": "tantraloka-a24",
+   "chunks": 3,
+   "terms": {
+    "puryastaka": 2,
+    "ahamkara": 1
+   }
+  },
+  {
+   "work": "tantraloka-a28",
+   "chunks": 44,
+   "terms": {
+    "prana": 9,
+    "deha_sarira": 23,
+    "linga_suksma": 6,
+    "vayu": 1
+   }
+  },
+  {
+   "work": "tantraloka-a29",
+   "chunks": 30,
+   "terms": {
+    "puryastaka": 1,
+    "prana": 8,
+    "deha_sarira": 5,
+    "linga_suksma": 5,
+    "kosa": 1,
+    "vayu": 2
+   }
+  },
+  {
+   "work": "tantrasara-a06",
+   "chunks": 4,
+   "terms": {
+    "prana": 14,
+    "kancuka": 1,
+    "deha_sarira": 2,
+    "linga_suksma": 1
+   }
+  },
+  {
+   "work": "tantrasara-a08",
+   "chunks": 4,
+   "terms": {
+    "puryastaka": 1,
+    "prana": 1,
+    "tanmatra": 4,
+    "indriya": 1,
+    "ahamkara": 5,
+    "manas": 1,
+    "buddhi": 6,
+    "kancuka": 2,
+    "deha_sarira": 4,
+    "ahamta": 1,
+    "vayu": 2
+   }
+  },
+  {
+   "work": "tantrasara-a13",
+   "chunks": 4,
+   "terms": {
+    "puryastaka": 1,
+    "prana": 3,
+    "deha_sarira": 6,
+    "linga_suksma": 1,
+    "ahamta": 1
+   }
+  }
+ ],
+ "puryastaka_passages": [
+  {
+   "work": "sivasutravimarsini",
+   "locator": "ssv-u3",
+   "verses": "33-77",
+   "hits": 16,
+   "roles": [
+    "burning",
+    "cosmogony",
+    "epistemology",
+    "formula",
+    "ritual",
+    "transmigration"
+   ],
+   "snip": "i manasi rajoguṇodaye ahaṃkāre tamoguṇodaye buddhau ca sattvaguṇodayarūpāyāṃ vṛttirvartanaṃ yasya tādṛśena puryāṃ sūkṣmaśarīre tanmātrapañcakaṃ guṇatrayamiti sthūlaśarīrakāraṇabhūtamaṣṭakaṃ yat saṃniviṣṭaṃ tanmukhyaṃ puryaṣṭakaṃ tatkāryatvāt sthūlamapi śarīraṃ tena saṃruddhaḥ tāvanmātrameva ātmatvenābhinayamāno vismṛtasarvātmakatvādisvasāmarthyavaśāt baddhaḥ ata eva paravaśaḥ sarvaśaktisvabhāvavyatirikta##- māyābhāsitānādinijakarmpacita-vāsanānuguṇa##- puryaṣṭakodbhūtaṃ dehabandhe bhoganirvṛtteḥ hetutaḥ pratyayodbhavaṃ niyatasv",
+   "immutable_id": "pt:pid:sivasu:71e50a1a7940"
+  },
+  {
+   "work": "ipvv",
+   "locator": "chunkV3-M-agama-dvitiyo-close-k12-20",
+   "verses": "M00022:10000-10886",
+   "hits": 10,
+   "roles": [
+    "burning",
+    "cosmogony",
+    "epistemology",
+    "formula",
+    "ritual",
+    "transmigration"
+   ],
+   "snip": "tyāśaṅkya pariharati sauṣupta ityādinā || 13 || śūnyapramātureva vaktavyaśeṣamācakṣāṇo dvitīyasuṣuptasya bhūmikāṃ karoti sūtreṇa sākṣāṇāmāntarī vṛttiḥ prāṇādiprerikā matā | jīvanākhyāthavā prāṇe'hantā puryaṣṭakātmikā || 14 || eṣa śūnyaḥ pramātā ahantārūpayā kartṛtayā abhiṣikto vidyākalāśaktiprapañcarūpasya buddhikarmendriyavargasya bāhyaviṣayālocanaviṣayanirmāṇalakṣaṇato bāhyavṛtteḥ pratyekamasādhāraṇarūpāyā vilakṣaṇā yā, asāvāntarī vṛttiryayā vāyurekaḥ prāṇanādikriyāpañcakaprapañcitaḥ pañcātmakatāmabhyet",
+   "immutable_id": "pt:pid:ipvv:f97439905c09"
+  },
+  {
+   "work": "ipvv",
+   "locator": "chunkV2-M-sastho-vimarsa-k6-7",
+   "verses": "M00021:9200-10000",
+   "hits": 7,
+   "roles": [
+    "burning",
+    "cosmogony",
+    "epistemology",
+    "formula",
+    "transmigration"
+   ],
+   "snip": "karaṇasya saṃkalpanābhimanananiścayanavṛttimayasya tattvam | yadanugrahādevaṃvidhavṛttilābhaḥ; tat cittattvaṃ, tasya vāyuḥ prāṇa āśrayatvamadhiṣṭheyatvaṃ gataḥ | tathābhūtena saṃvittattvādhiṣṭhitena prāṇena buddhirūpapuryaṣṭakasāhityabhājā yato'dhiṣṭhitaṃ śarīraṃ, tataścetanocitasvātantryayogo'sya; natu sākṣātsaṃvedanena adhiṣṭhitaṃ, tat | tathā ca uktaṃ prakāśarūpo bhagavān prāṇādhiṣṭhāna ucyate | prāṇa eva khago dharmo haṃsaśceti trivāhanaḥ || iti | ata eva śarīraṃ yadavāpnoti yaccāpyutkrāmatīśvaraḥ | gṛhītvaitāni saṃyā",
+   "immutable_id": "pt:pid:ipvv:311635b7c8a8"
+  },
+  {
+   "work": "ipvv",
+   "locator": "chunkV3-L-agama-dvitiyo-k1-11",
+   "verses": "M00022:9272-10000",
+   "hits": 7,
+   "roles": [
+    "burning",
+    "cosmogony",
+    "epistemology",
+    "ritual",
+    "transmigration"
+   ],
+   "snip": "ena sthitaṃ yadaiśvaryaṃ kartṛtālakṣaṇaṃ svātantryaṃ kriyāśaktiparyantaṃ jñānaṃ, tat teṣāṃ rūpam | tarhi dvitvaṃ kuta ityāha sattva iti ya eva aṅgibhūto guṇaḥ, tadviṣayameva tadaiśvaryaṃ jñānarūpamiti bhedaḥ | śūnye puryaṣṭakātmatātyantasūkṣmadeha evavā iti vṛttiṃ vyācakṣāṇo mātrapadaṃ sautraṃ vyākaroti yadyapi ityādinā | mūrtyā ākāreṇa, kālaviśeṣeṇa ca śarīrivat niyatena pārimityabhājā yo'vacchedastadrahitaḥ; sāmānyakālayogastu tasya api astyeva yadivā mūrtidvārā yaḥ kālabhedo niyataḥ kālaḥ | puryaṣṭakasya dehatā astyeva mah",
+   "immutable_id": "pt:pid:ipvv:1c8b0fcf15a4"
+  },
+  {
+   "work": "ipvv",
+   "locator": "chunkV3-N-tattva-prathamo-k1-8",
+   "verses": "M00022:10895-11600",
+   "hits": 6,
+   "roles": [
+    "burning",
+    "cosmogony",
+    "epistemology",
+    "formula",
+    "transmigration"
+   ],
+   "snip": "khyā tāvat iti mahāśūnyarūpā | cita eva iti mahāsaṃhārarūpā raudrī daśā, eṣā ca īśvarasaṃveda eva paramārthato viśrānteti vāgrahaṇena āha, anyathā pṛthageva enāmaparetyamunā upakrameṇa nirdiśet | nanu mahāsaṃhāre'pi puryaṣṭakarūpatvena bhāvisaṃhāravaicitryavanto'ṇavastiṣṭhanti eva, tatra kathaṃ cito viśvābhāvarūpatetyāśaṅkya āha puryaṣṭakasaṃhāro'pi iti apavedyapralayasamaye puryaṣṭakasya api bījabhāvopagamanaṃ śūnyarūpatāyāmiti saiva śūnyarūpatā tadbījavaicitryeṇa pramātṛbhedātmikā tatra raudre mahāśūnye saṃskārarūpatayā tā",
+   "immutable_id": "pt:pid:ipvv:419f72e00ec9"
+  },
+  {
+   "work": "ipvv",
+   "locator": "chunkV3-K-agama-prathamo-k8-11-close",
+   "verses": "M00022:8500-9267",
+   "hits": 5,
+   "roles": [
+    "burning",
+    "cosmogony",
+    "epistemology",
+    "formula",
+    "ritual",
+    "transmigration"
+   ],
+   "snip": "dati māyāśaktiṃ tato vyatirecayitum īśvarasya ityādinā | śarīrasya śīryamāṇatāṃ darśayati jarā ityādinā | agnirūpam iti tadavyabhi cāriṇamiti (page 281) yāvat | prāṇata eva vargapañcakasya tritayasya ca anupraveśāt puryaṣṭakarūpatāmicchanti | smaryamāṇatvāt iti saṃvidrūpaṃ hi avicchinnaprakāśasvabhāvaḥ kathaṃ smaryate | taduktaṃ nābhāvaḥ---------------------------| (spa. kā. 12) ityādi upakramya yato'bhiyogasaṃsparśāt tadāsīditi niścayaḥ | iti uktvā natvevaṃ smaryamāṇatvaṃ tat tattvaṃ pratipadyate | (spa. kā.",
+   "immutable_id": "pt:pid:ipvv:ad91d5855dde"
+  },
+  {
+   "work": "ipvv",
+   "locator": "chunkV2-A-caturtho-vimarsa-aham",
+   "verses": "M00021:29-700",
+   "hits": 4,
+   "roles": [
+    "burning",
+    "cosmogony",
+    "epistemology",
+    "formula",
+    "ritual",
+    "transmigration"
+   ],
+   "snip": "na samastasya etatprakaraṇārthasya hetutāṃ dyotayan pūrvaprakaraṇena saha etat prakaraṇaṃ saṃgamitaṃ karoti,- iti sūtrārthaḥ | tasya ekasya pūrvānubhūtatvena yaḥ pratyavarśaḥ sa iti ubhayakālasaṃsparśī atra iti prāṇapuryaṣṭakadehādau saṃkucitasya pūrvānubhūtārthāsaṃpramoṣarūpā smṛtirnāma vyāpāraḥ iti saṃbandhaḥ | ekatvāt hi sa ubhayakālaspṛk | kartṛtaiva ca vibhutā svairitvamiti vṛttiyojanā | nanu bodhātmano nityasya kālayogo nāsti, tatkṛtaśca ayaṃ vyavahāraḥ parato'pi astīti tadākṣiptaśca pūrvamapi astīti tau kathaṃ bodhātma",
+   "immutable_id": "pt:pid:ipvv:298f931229c5"
+  },
+  {
+   "work": "ipvv",
+   "locator": "chunkV3-F-kriya-trtiyo-close",
+   "verses": "M00022:5000-5514",
+   "hits": 4,
+   "roles": [
+    "burning",
+    "epistemology",
+    "formula",
+    "ritual",
+    "transmigration"
+   ],
+   "snip": "yatyāgena, sa eva mohamahārṇavāduttarītuṃ samarthaḥ | tat iti parameśvarokte śāstre yā upapāditā bhāvena iti saṃskāro dīkṣādikriyā dhyānādiyogo yogo jñānaṃ tasyāḥ samantataḥ sāmarthyāt tāṃ tām iti heyarūpāṃ dehaprāṇapuryaṣṭakaśūnyādipramātṛmayīṃ bhogādhārabhogyādilakṣaṇāṃ bhuvanabhāvādimayīṃ bhuvaṃ pariharaṃstyajan svayaṃ dhyānayogajñānādiṣu parameśvaraguruprasādadvāreṇa ca dīkṣādau sa parameśānugṛhītaḥ prakāśatāṃ nayati aiśvaryamātmani,-iti pūrveṇa (page 168) saṃbandhaḥ | iyati dīkṣādīnāṃ sarveṣāṃ sāmarthyamuktaṃ yadatraiva",
+   "immutable_id": "pt:pid:ipvv:76c15b31b638"
+  },
+  {
+   "work": "ipvv",
+   "locator": "chunkC-svatma-maya-upanishad",
+   "verses": "M00020:1200-1800",
+   "hits": 2,
+   "roles": [
+    "burning",
+    "cosmogony",
+    "epistemology",
+    "transmigration"
+   ],
+   "snip": "vabhāsayati | tatra anācchādanāṃ-śapradhānatāyāṃ sadāśiveśvararūpatāsamāveśadaśā, ācchādanabhāgāvabhāsapradhānatāyāṃ māyāvijṛmbhārūpā saṃsāridaśā; tato nīlamityādivedyabhedaḥ, ābhāsamānakāyabhedopalakṣita- buddhiprāṇapuryaṣṭakādyupādhibhedārūṣitacaitanyacchāyākṛto vedakabheda iti bhedavijṛmbhāyāṃ māyāpramātṛtve (page 45) kāyo mūrdhābhiṣiktaḥ, tathā ca taducchedādeva prabhṛti mokṣavyavahārastatra tatra vaikaraṇyaṃ mokṣaḥ ityādau | tatpradhānyamasya sūcayati kāyo'pivā iti | ayam iti pūrvaṃ prakāśarūpatvāt cidrūpa eva svātantryāt",
+   "immutable_id": "pt:pid:ipvv:cab68738d18e"
+  },
+  {
+   "work": "ipvv",
+   "locator": "chunkV2-C-vistanti-ajadapramatrsiddhi",
+   "verses": "M00021:1400-2082",
+   "hits": 2,
+   "roles": [
+    "burning",
+    "cosmogony",
+    "epistemology",
+    "formula",
+    "transmigration"
+   ],
+   "snip": "etyāha | kathaṃ tarhi | tanmayau | viśuddhapramātṛparamārthādadhikamanayorna kiṃcit vapuḥ | kathametat pratyeyamiti cet, āha grāhakasya tāvat iti | ayatnopapannametaditi tāvatpadam | yadivā yadyapyarthasthitiḥ prāṇapuryaṣṭakaniyantrite | jīve niruddhā tatrāpi paramātmani sā sthitā || (page 59) tadātmanaiva tasya syātkathaṃ prāṇena yantraṇā | (aja. pra. si. 20) iti nyāyo'tra anusaraṇīyaḥ iti tāvacchabdābhiprāyaḥ | āpāte yadyapi grāhyamidamiti prakāśabhinnatvena vimṛśyamānaṃ cakāsti, tathāpi idamityasya vicchinnavimarśasya k",
+   "immutable_id": "pt:pid:ipvv:55d2fd8d1703"
+  },
+  {
+   "work": "ipvv",
+   "locator": "chunkV2-L-sastho-vimarsa-smrti-apohana",
+   "verses": "M00021:8405-9200",
+   "hits": 2,
+   "roles": [
+    "burning",
+    "epistemology",
+    "formula",
+    "transmigration"
+   ],
+   "snip": "ehe buddhāvatha prāṇe kalpite nabhasīva vā || 4 || pramātṛtvenāhamiti vimarśo'nyavyapohanāt | vikalpa eva sa parapratiyogyavabhāsajaḥ || 5 || ahamiti vimarśaścittattvameva yadyapi ālambate yadyapyarthasthitiḥ prāṇapuryaṣṭakaniyantrite | jīve niruddhā tatrāpi paramātmani sā sthitā || (aja. pra. si. 20) itinyāyena, tathāpi tat vihāya anādṛtya ullaṃghya dehādau bhedite'bhimānakalpitena nīlādiviṣayapramātṛtābhiṣekayogena, natu saṃketamātraprabhāvena [prabhavena ka. |] yo'hamiti vimarśo'vatīrṇaḥ, sa nirvikalpakabhuvi yā śuddhā v",
+   "immutable_id": "pt:pid:ipvv:c94153f929f7"
+  },
+  {
+   "work": "ipvv",
+   "locator": "chunkV3-J-agama-prathamo-k1-7",
+   "verses": "M00022:7662-8500",
+   "hits": 2,
+   "roles": [
+    "burning",
+    "cosmogony",
+    "epistemology",
+    "formula",
+    "ritual",
+    "transmigration"
+   ],
+   "snip": "aśivarūpatvāt | etadeva āha ekamevahi iti | yeṣu iti yeṣu bhāveṣu madhye | tadānīṃ ca iti avabhāsanākāle | na kevalaṃ grāhyāṇāmiti apiḥ | śūnyatārūpāṇām iti apavedye pralaye saṃskārarūpatayā svarūpamātrāvaśeṣavedyatā puryaṣṭakarūpāṇāṃ, savedye grāhakāyattatvāt ca grāhyāṇāmapi asau pralaye iti na sa bhedena abhihitaḥ | evaṃca sadāśiveśvarau śivatattvāt na bhidyete | tataḥ kathaṃ tayoḥ sṛṣṭipralayau vyāpārāntaraṃ vyapadiśyate ityetat prakṛtaṃ nirvāhayituṃ na etat prayāsasādhyamityamunā āśayena prameyāntaraṃ nirūpayati tadetādṛśa",
+   "immutable_id": "pt:pid:ipvv:7c8c91e90508"
+  },
+  {
+   "work": "tantraloka-a15",
+   "locator": "tal-a15-p24",
+   "verses": "15.231-15.240",
+   "hits": 2,
+   "roles": [
+    "burning",
+    "cosmogony",
+    "ritual"
+   ],
+   "snip": "et aṅguṣṭhāgrātkālavahnijvālābhāsvaramutthitam / astraṃ dhyātvā tacchikhābhirbahirantardahettanum dāhaśca dhvaṃsa evokto dhvaṃsakaṃ mantrasaṃjñitam / tejastathābhilāpākhyasvavikalparasombhitam tena mantrāgninā dāho dehe puryaṣṭake tathā / dehapuryaṣṭakāhantāvidhvaṃsādeva jāyate nahi sadbhāvamātreṇa deho@sāvanyadehavat / ahantāyāṃ hi dehatvaṃ sā dhvastā taddaheddhruvam taddehasaṃskārabharo bhasmatvenātha yaḥ sthitaḥ / taṃ varmavāyunādhūya tiṣṭhecchuddhacidātmani tasmindhruve nistaraṅge samāpattimupāgataḥ / saṃvidaḥ sṛṣṭidharmitvādādyām",
+   "immutable_id": "pt:pid:tal:tantraloka-a15024"
+  },
+  {
+   "work": "gitarthasangraha",
+   "locator": "gita-a15",
+   "verses": "587-607",
+   "hits": 1,
+   "roles": [
+    "burning",
+    "cosmogony",
+    "epistemology",
+    "ritual"
+   ],
+   "snip": "āni saṃyati vāyurgandhānivāśayāt || 15-8 || avāpnoti-gṛhṇāti | utkrāmati-tyajati | etaiḥ saha | yathā vāyuḥ sarvagato viśrāntidhāma pārthivaṃ prāpya tato gandhamānīya sthānāntare tatsahita eva saṃkrāmati evaṃ jīvaḥ puryaṣṭakena saha | evaṃ sṛṣṭau saṃhāre caitaiḥ sāhityamasyoktvā sthitāvapi sthānāsanamananādirūpāyāṃ viṣayagrahaṇātmikāyāṃ tatsahitasyaivāsya vyāpāra iti niścīyate || 8 || śrotraṃ cakṣuḥ sparśanaṃ ca rasanaṃ ghrāṇameva ca | adhiṣṭhāya manaścāyaṃ viṣayānupasevate || 15-9 || tiṣṭhantamutkrāmantaṃ vā bhuñjānaṃ vā",
+   "immutable_id": "pt:pid:gitart:d6116b3d3bba"
+  },
+  {
+   "work": "ipvv",
+   "locator": "chunkD-memory-pramana",
+   "verses": "M00020:1800-2400",
+   "hits": 1,
+   "roles": [
+    "burning",
+    "cosmogony",
+    "epistemology",
+    "formula",
+    "transmigration"
+   ],
+   "snip": " tāvadbhāvyamiti | nanu vālmīkistāvatā anubhavitā siddhaḥ, na asmādādiḥ | sthāne praśnaḥ, kintu saṃvedanātmano'haṃvimarśasya tāvadiyatā sadbhāvaḥ sadātanaḥ siddhaḥ | saca eka eva paramārthapramātā yadi paraprāṇabuddhipuryaṣṭakaśarīrādayo bhinnāḥ, tadbhedakṛtaśca pramātṛbhedavyavahāra iti tat śarīrādi adyatanaṃ tasmin kāle nābhūdityetadatra tattvam | pralayakāle sṛṣṭimukhārambhe ca na vayaṃ vabhūvimeti, anyathā kālaviśeṣollekho na syāt | vayaṃ na vabhūvimetyapi atra pratītau liṭpratyayāntarnītabhūtakālāvabhāsa unmiṣatyeva | nahi",
+   "immutable_id": "pt:pid:ipvv:80f9c7f414ed"
+  },
+  {
+   "work": "ipvv",
+   "locator": "chunkE-cit-acid-dvairasya",
+   "verses": "M00020:2400-3126",
+   "hits": 1,
+   "roles": [
+    "burning",
+    "cosmogony",
+    "epistemology",
+    "formula",
+    "transmigration"
+   ],
+   "snip": "cidrūpasya, apitu śarīraprāṇādervedyarūpasyaiva | tasya tu pramātṛtā paramaśivaprakāśa eva, māyākṛtāt tu abhimānamātrāt tasya cidrūpatākalpanaṃ na tāttvikam | tathāhi ajaḍapramātṛsiddhiḥ yadyapyarthasthitiḥ prāṇapuryaṣṭakaniyantrite | jīve niruddhā tatrāpi paramātmani sā sthitā || tadātmanaiva tasya syātkathaṃ prāṇena yantraṇā | (21) ityādi | etacca sarvaṃ cittattvasya svayaṃprakāśatvāt ityanena uktam | yat svayameva prakāśate na anyatra prakāśata eva ca, natu prakāśyate'nyeneti, tadeva tattvataścidrūpam | tasya k",
+   "immutable_id": "pt:pid:ipvv:4f780e406d0c"
+  },
+  {
+   "work": "ipvv",
+   "locator": "chunkV2-B-sahajavimarsa-prakasavimarsa",
+   "verses": "M00021:700-1400",
+   "hits": 1,
+   "roles": [
+    "burning",
+    "epistemology",
+    "formula",
+    "transmigration"
+   ],
+   "snip": "aṃkhyānopadeśaviśeṣābhāsāt dehe pratanūkaroti pramātṛtābhimānaṃ; tadā ātyantikaḥ kālabhedo'navaratasphuṭabhedatvāt dehasya avaśyaṃbhāvī yaḥ sa yadyapi asya vigalati, tathāpi vedyarūpatvādakhyātipradhāne māyāmaya eva puryaṣṭake vā prāṇe śūnye vā pramātṛtābhimāno'sya sphuṭaḥ | tatra ca kālakṛtāvasthābhedo deha iva sphuṭo na saṃbhavati yadyapi, tathāpi taddehasahakāryabhimānāvicchedādaupādhikaḥ sphurati ko'pi bhedaḥ | tataśca asya pūrvānubhūteṣu artheṣu smaraṇaṃ tāvadasti | dehātmakaniviḍatarāvaraṇābhimānaviṣamā ca tanukaraṇaprā",
+   "immutable_id": "pt:pid:ipvv:d5a036b8cfae"
+  },
+  {
+   "work": "ipvv",
+   "locator": "chunkV2-H-pancamo-vimarsa-k11-13",
+   "verses": "M00021:5200-6000",
+   "hits": 1,
+   "roles": [
+    "burning",
+    "cosmogony",
+    "epistemology",
+    "formula",
+    "transmigration"
+   ],
+   "snip": " tatrabhavān nādenāhitabījānāmantyena dhvaninā saha | āvṛttaparipākāyāṃ buddhau śabdo'vadhāryate || (vā. pa. 1|85) iti | eṣā tāvat prathamā vāk | dvitīyā tu iti antaḥkaraṇaṃ manobuddhyahaṃkāralakṣaṇaṃ madhyabhūmau puryaṣṭakātmani prāṇādhāre viśrāntaṃ yā vimarśaśaktiḥ prerayati, sā madhyamā vāk | tatpreritaṃ ca tadantaḥkaraṇaṃ saṃkalpane niścaye abhimanane ca svasmin vyāpāre vikalpanalakṣaṇe pravartate | tatkāle sā vimarśamayī vāk saṃkalpyādikaṃ grāhyaṃ saṃkalpayitrādirūpaṃ ca grāhakaṃ svena abhidhānasya- imaṃ ghaṭamahaṃ cai",
+   "immutable_id": "pt:pid:ipvv:32b73212ceee"
+  },
+  {
+   "work": "ipvv",
+   "locator": "chunkV2-N-sastho-k8-11",
+   "verses": "M00021:10000-10385",
+   "hits": 1,
+   "roles": [
+    "burning",
+    "cosmogony",
+    "epistemology",
+    "ritual",
+    "transmigration"
+   ],
+   "snip": "ādyābhāso dehābhāsaśca | uktam iti vāsanāprabodhasūtre (1|5|5) cidātmaiva hi..................................... | (1|5|7) iti sūtre ca | nanu evaṃ vighaṭetaiva pramātṛbheda ityata āha natu (page 326) iti | prāṇapuryaṣṭakādau tṛṭśākhādibhedavyavasthāyāstādavasthyāditi bhāvaḥ | naca atra vipratipattiḥ kasyaciditi darśayituṃ jñānaṃ ca iti yat vakṣyati tat prakṛtena saṃgamayituṃ sa eva avabhāso jñānamucyate ityācaṣṭe | nanu avabhāso ghaṭādirūpo vedyastatkathaṃ sa jñānaṃ syāt | āha pramātṛvyāpārarūpā ca iti | saiva asya katham",
+   "immutable_id": "pt:pid:ipvv:3b074ddbaf3b"
+  },
+  {
+   "work": "malinivijayavarttika",
+   "locator": "mv-k02",
+   "verses": "151-300",
+   "hits": 1,
+   "roles": [
+    "burning",
+    "cosmogony",
+    "epistemology",
+    "transmigration"
+   ],
+   "snip": " parame svātmany adhyāsya sthairyam añjasā / taducchalitasaṃbodhakalāsaṃchādanakramāt // [AgMsv_1.282] viśvaṃ kāmāṅkuśādhīnaṃ kiṃkaratvena bhāsate / adhyātmasiddhayā yuktyā tv anayaiva nijodaye // [AgMsv_1.283] prāṇaḥ puryaṣṭakaṃ dehaṃ vyāpya viśvaṃ prakarṣati / tattvasya kāmatattvasya prakaṭīkriyayā yataḥ // [AgMsv_1.284] siddhacakreṣv idaṃ gopyaṃ kiṃ vā na prakaṭīkṛtam / śūnyānandāt prasṛtyaiva devaḥ procchalitātmakaḥ // [AgMsv_1.285] vartamāno nijāḥ śaktīr vikāsyaiva pravartate / yatrāsya pravivikṣāsti yataś ca prāvṛtad vibhuḥ ",
+   "immutable_id": "pt:pid:malini:079c273dd4e2"
+  },
+  {
+   "work": "spanda",
+   "locator": "span-p06",
+   "verses": "KSTS 48-52+prasasti",
+   "hits": 1,
+   "roles": [
+    "cosmogony",
+    "epistemology"
+   ],
+   "snip": "seyaṃ kriyātmikā śaktiḥ śivasya paśuvartinī | bandhayitrī svamārgasthā jñātā siddhyupadādikā tanmātrodayarūpeṇa mano'haṃbuddhivartinā | puryaṣṭakena saṃruddhastadutthaṃ pratyayodbhavam bhuṅkte paravaśo bhogaṃ tadbhāvātsaṃsaratyataḥ | saṃsṛtipralayasyāsya kāraṇaṃ saṃpracakṣmahe yadā tvekatra saṃrūḍhastadā tasya layodayau | niyacchanbhoktṛtāmeti tataścakreśvaro bhavet agādhasaṃśayāmbhodhisamuttaraṇatāriṇīm (k: saṃśayāmbhodheriti; g: saṃśayāmbhodhau) | va",
+   "immutable_id": "pt:pid:span:d5c0c9f34e03"
+  },
+  {
+   "work": "tantraloka-a08",
+   "locator": "tal-a08-p24",
+   "verses": "8.231-8.240",
+   "hits": 1,
+   "roles": [
+    "burning"
+   ],
+   "snip": " taratamayogena tato@pi devayonyaṣṭakaṃ lakṣyaṃ tu lokānāmakṣāṇi ca viṣayaparicchittikaraṇāni / gandhādermahadantādekādhikyena jātamaiśvaryam aṇimādyātmakamasminpaiśācādye viriñcānte / jñātvaivaṃ śodhayedbuddhiṃ sārdhaṃ puryaṣṭakendriyaiḥ krodheśāṣṭakamānīlaṃ saṃvartādyaṃ tato viduḥ / tejoṣṭakaṃ balādhyakṣaprabhṛtikrodhanāṣtakāt akṛtādi tato buddhau yogāṣṭakamudāhṛtam / svacchandaśāsane tattu mūle śrīpūrvaśāsane yogāṣṭakapade yattu some śraikaṇṭhameva ca / tato māyāpuraṃ bhūyaḥ śrīkaṇṭhasya ca kathyate tena dvitīyaṃ bhuvanaṃ tayoḥ pra",
+   "immutable_id": "pt:pid:tal:tantraloka-a08024"
+  },
+  {
+   "work": "tantraloka-a09",
+   "locator": "tal-a09-p21",
+   "verses": "9.201-9.210",
+   "hits": 1,
+   "roles": [
+    "burning",
+    "epistemology"
+   ],
+   "snip": "yojanāṃ dhatte viśiṣṭe kāryamaṇḍale vidyā rāgo@tha niyatiḥ kālaścaitaccatuṣṭayam / kalākāryaṃ bhoktṛbhāve tiṣṭhadbhoktṛtvapūritam māyā kalā rāgavidye kālo niyatireva ca / kañcukāni ṣaḍuktāni saṃvidastatsthitau paśuḥ dehapuryaṣṭakādyeṣu vedyeṣu kila vedanam / etatṣaṭkasasaṃkocaṃ yadavedyamasāvaṇuḥ uktaṃ śivatanuśāstre tadidaṃ bhaṅgyantareṇa punaḥ / āvaraṇaṃ sarvātmagamaśuddhiranyāpyananyarūpeva śivadahanakiraṇajālairdāhyatvāt sā yato@nyarūpaiva / anidaṃpūrvatayā yadrañjayati nijātmanā tato@nanyā sahajāśuddhimato@ṇorīśaguhābhyāṃ hi kañc",
+   "immutable_id": "pt:pid:tal:tantraloka-a09021"
+  },
+  {
+   "work": "tantraloka-a24",
+   "locator": "tal-a24-p02",
+   "verses": "24.11-24.20",
+   "hits": 1,
+   "roles": [
+    "burning",
+    "epistemology",
+    "ritual"
+   ],
+   "snip": "evaṃ sadāśivam / īśarudraharibrahmacatuṣkaṃ prāgdigāditaḥ pūjayitvā śrutisparśau rasaṃ gandhaṃ vapurdvayam / dhyahaṃkṛtī manaśceti brahmādiṣvarpayetkramāt eteṣāṃ tarpaṇaṃ kṛtvā śatahomena daiśikaḥ / eṣā sāṃnyāsikī dīkṣā puryaṣṭakaviśodhanī",
+   "immutable_id": "pt:pid:tal:tantraloka-a24002"
+  },
+  {
+   "work": "tantraloka-a24",
+   "locator": "tal-a24-p03",
+   "verses": "24.21-24.24",
+   "hits": 1,
+   "roles": [
+    "transmigration"
+   ],
+   "snip": "[and]-puryaṣṭakasyābhāve ca na svarganarakādayaḥ / tathā kṛtvā na kartavyaṃ laukikaṃ kiṃcanāpi hi uktaṃ śrīmādhavakule śāsanastho mṛteṣvapi / piṇḍapātodakāsrvādi laukikaṃ parivarjayet śivaṃ saṃpūjya cakrārcāṃ yathāśakti samācaret / kramāttridaśamatriṃśatriṃśavatsaravāsare ityukto@ntyeṣṭiyāgo@yaṃ parameśvarabhāṣitaḥ",
+   "immutable_id": "pt:pid:tal:tantraloka-a24003"
+  },
+  {
+   "work": "tantraloka-a29",
+   "locator": "tal-a29-p27",
+   "verses": "29.261-29.270",
+   "hits": 1,
+   "roles": [
+    "epistemology",
+    "transmigration"
+   ],
+   "snip": "adhā yaddhrāṇādikabuddhisaṃjñakaraṇāntaḥ / tat svasvanāḍisūtrakrameṇa saṃcārayecchiṣye abhimānadārḍhyabandhakrameṇa vijñānasaṃjñako vedhaḥ / hṛdayavyomani sadyo divyajñānārkasamudayaṃ dhatte piṇḍaḥ paraḥ kalātmā sūkṣmaḥ puryaṣṭako bahiḥ sthūlaḥ / chāyātmā sa parāṅmukha ādarśādau ca saṃmukho jñeyaḥ iti yaḥ piṇḍavibhedastaṃ rabhasāduttarottare śamayet / tattadnalane kramaśaḥ paramapadaṃ piṇḍavedhena yadyaddehe cakraṃ tatra śiśoretya viśramaṃ kramaśaḥ / ujjvalayettaccakraṃ sthānākhyastatphalaprado vedhaḥ nāḍyaḥ pradhānabhūtāstisro@nyāsta",
+   "immutable_id": "pt:pid:tal:tantraloka-a29027"
+  },
+  {
+   "work": "tantrasara-a08",
+   "locator": "tsa08-p03",
+   "verses": "8.39-8.64",
+   "hits": 1,
+   "roles": [
+    "cosmogony"
+   ],
+   "snip": "acittve asminn eva kartṛtvam ity atrārthe niyater vyāpāraḥ // abhts_8.53 kāryakāraṇabhāve 'pi asyā eva vyāpāraḥ tena kalāta eva etac catuṣkaṃ jātam idam eva kiṃcid adhunā jānan abhiṣvaktaḥ karomi ity evaṃrūpā saṃvid dehapuryaṣṭakādigatā paśur ity ucyate // abhts_8.54 tad idaṃ māyādiṣaṭkaṃ kañcukaṣaṭkam ucyate // abhts_8.55 saṃvido māyayā apahastitatvena kalādīnām uparipātināṃ kañcukavat avasthānāt // abhts_8.56 evaṃ kiṃcitkartṛtvaṃ yat māyākāryaṃ tatra kiṃcit tv aviśiṣṭaṃ yat kartṛtvaṃ viśeṣyaṃ tatra vyāpriyamāṇā kalā vidyādiprasavahe",
+   "immutable_id": "pt:pid:ts:a08:7f9e4b3307f2"
+  },
+  {
+   "work": "tantrasara-a13",
+   "locator": "tsa13-p02",
+   "verses": "13.20-13.34",
+   "hits": 1,
+   "roles": [
+    "burning",
+    "cosmogony",
+    "epistemology",
+    "ritual",
+    "transmigration"
+   ],
+   "snip": "athā tatraiva evaṃ svātmādhīnāpi svasammukhīnasya deśasya purastāttvāt // abhts_13.23 evaṃ svātmasūryaparameśatritayaikībhāvanayā dikcarcā iti abhinavaguptaguravaḥ // abhts_13.24 evaṃ sthite uttarābhimukham upaviśya dehapuryaṣṭakādau ahambhāvatyāgena dehatāṃ dahet saṃnidhāv api paradehavat adehatvāt tato nistaraṅgadhruvadhāmarūḍhasya dṛṣṭisvābhāvyāt yā kila ādyā spandakalā saiva mūrtiḥ tadupari yathopadiṣṭayājyadevatācakranyāsaḥ prādhānyena ca iha śaktayo yājyāḥ // abhts_13.25 tadāsanatvāt bhagavannavātmādīnāṃ śakter eva ca pūjyatvāt ",
+   "immutable_id": "pt:pid:ts:a13:d2b0b17f0b22"
+  }
+ ]
+}
