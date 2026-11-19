@@ -154,8 +154,25 @@ Current measured state: **202 theorems**, **23/239 chunks referenced**,
 
 ## 7. Honest limits and next steps
 
-- **Biernacki is not in `prx0r/vedanta`.** Our formula-A chain is ĪPVV +
-  Medhananda. To test Biernacki's own pages, her text must be added.
+- **Correction (2026-11-19): no secondary source is required for the Trika
+  side.** An earlier draft of this report implied a Biernacki dependency.
+  That was wrong: the primary witness is our own ĪPVV, already chunk-bound
+  and quoted verbatim (`chunkV3-M`), and it *states both formulas and
+  reconciles them*. Biernacki and Medhananda are corroboration (X), not
+  evidence the argument stands on. Do not gate Trika claims on them.
+- **The Trika corpus covers the doctrine broadly** (measured, `rg` over every
+  `passages.jsonl`):
+
+  | term | works | notes |
+  |---|---|---|
+  | `puryaṣṭaka` | **12** | ĪPVV 56 hits; Śivasūtravimarśinī 16; TĀ 8/9/15/24/29; Tantrasāra 8/13; Spanda; MV-vārttika; Gītārthasaṅgraha |
+  | `prāṇa` | **44** | ĪPVV 160; Śivasūtravimarśinī 61; TĀ 6/7/15/29 |
+  | `tanmātra` | 6 | ĪPVV 27; TĀ 8/9; Tantrasāra 8 |
+  | `ahaṃkāra/ahaṃkṛti` | 7 | ĪPVV 22; TĀ 8/9/24 |
+  | `kañcuka` | 10 | ĪPVV 11; Śivasūtravimarśinī 11; TĀ 6/8/15; Tantrasāra 6/8 |
+  | `antaḥkaraṇa` | 4 | ĪPVV 37; Gītārthasaṅgraha 3; Śivasūtravimarśinī 2; TĀ 6 |
+
+  So the formalisation is grounded in a corpus, not in a modern monograph.
 - **Vedānta primaries are external.** `Tattvabodha`/`Vedāntasāra` are not in our
   located corpus, so Vedānta claims sit at X, not T. Ingesting them (a
   translation-work-style vector with chunk locators) is the single highest-value
@@ -172,7 +189,8 @@ Current measured state: **202 theorems**, **23/239 chunks referenced**,
    with `SubtleBody.lean` theorems cited, claims bound to verse IDs, tension =
    `recognition-vs-individuation` (or a new `puryastaka-vs-kosha`).
 2. Ingest `Tattvabodha` / `Vedāntasāra` (and optionally the Vivekananda CW
-   passages) into a located corpus; re-tier the Vedānta evidence.
+   passages) into a located corpus; re-tier the *Vedānta* evidence (the Trika
+   side needs nothing added — see the corpus coverage table above).
 3. Formalise `pañcakośa` and `Mālinī` as separate models, then a small
    `Comparison.lean` that states exactly where the four structures can and cannot
    map onto each other.
